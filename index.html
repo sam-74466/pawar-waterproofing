@@ -407,51 +407,66 @@
   </section>
 
   <section id="contact">
-    <div class="container">
-      <div class="section-head">
-        <h2>Contact</h2>
-        <div class="muted">Quick response. Share photos or request a free site visit.</div>
-      </div>
-      <div class="grid" style="grid-template-columns:1.1fr .9fr; gap:22px">
-        <div>
-          <!-- Replace action URL with your FormSubmit endpoint or Google Apps Script web app URL -->
-          <form id="contactForm" action="https://formsubmit.co/pawarwaterproofing86@gmail.com" method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_subject" value="New enquiry — Pawar Waterproofing">
-            <input type="hidden" name="_template" value="table">
+  <div class="container">
+    <div class="section-head">
+      <h2>Contact</h2>
+      <div class="muted">Quick response. Share photos or request a free site visit.</div>
+    </div>
+    <div class="grid" style="grid-template-columns:1.1fr .9fr; gap:22px">
+      <div>
+        <!-- Replace action URL with your FormSubmit endpoint or Google Apps Script web app URL -->
+        <form id="contactForm" action="https://formsubmit.co/pawarwaterproofing86@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New enquiry — Pawar Waterproofing">
+          <input type="hidden" name="_template" value="table">
 
-            <div class="row">
-              <input name="name" placeholder="Your name" required />
-              <input name="phone" placeholder="Phone / WhatsApp" required />
-            </div>
-            <div class="row">
-              <input name="email" type="email" placeholder="Email (optional)" />
-              <input name="city" placeholder="Area / City" value="Pune" />
-            </div>
-            <textarea name="message" placeholder="Tell us the issue: location, type of leakage, photos link…" required></textarea>
-            <div class="row">
-              <button class="btn primary" type="submit">Send Enquiry</button>
-              <a class="btn whatsapp" id="waBtn" href="#" target="_blank" rel="noopener">Share on WhatsApp</a>
-            </div>
-            <small class="muted">By submitting, you agree to be contacted about this request.</small>
-          </form>
+          <div class="row">
+            <input name="name" placeholder="Your name" required />
+            <input name="phone" placeholder="Phone / WhatsApp" required />
+          </div>
+
+          <!-- Removed email input -->
+          <div class="row">
+            <select name="problem" required>
+              <option value="">-- Select Problem --</option>
+              <option value="thermal">Thermal Scanning</option>
+              <option value="roof">Roof Waterproofing</option>
+              <option value="tank">Tank Waterproofing</option>
+              <option value="basement">Basement Waterproofing</option>
+              <option value="podium">Podium Waterproofing</option>
+              <option value="shade">Commercial Shade Waterproofing</option>
+              <option value="crack">Crack Filling</option>
+              <option value="plumbing">Plumbing Leak Repair</option>
+              <option value="other">Other</option>
+            </select>
+            <input name="city" placeholder="Area / City" value="Pune" />
+          </div>
+
+          <textarea name="message" placeholder="Tell us the issue: location, type of leakage, photos link…" required></textarea>
+          <div class="row">
+            <button class="btn primary" type="submit">Send Enquiry</button>
+            <a class="btn whatsapp" id="waBtn" href="#" target="_blank" rel="noopener">Share on WhatsApp</a>
+          </div>
+          <small class="muted">By submitting, you agree to be contacted about this request.</small>
+        </form>
+      </div>
+      <div>
+        <div class="map">
+          <!-- Aundh, Pune — no API key needed -->
+          <iframe title="Aundh Pune Map" width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.763750626012!2d73.80374097519735!3d18.541086468918457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2c9a3a12c1%3A0x3a3a6a0d9d9e4a3!2sAundh%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1693399999999"></iframe>
         </div>
-        <div>
-          <div class="map">
-            <!-- Aundh, Pune — no API key needed -->
-            <iframe title="Aundh Pune Map" width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
-              referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.763750626012!2d73.80374097519735!3d18.541086468918457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2c9a3a12c1%3A0x3a3a6a0d9d9e4a3!2sAundh%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1693399999999"></iframe>
-          </div>
-          <div style="margin-top:12px">
-            <div><b>Phone:</b> +91 9226948412</div>
-            <div><b>Email:</b> pawarwaterproofing86@gmail.com</div>
-            <div><b>Office:</b> Aundh, Pune, Maharashtra</div>
-          </div>
+        <div style="margin-top:12px">
+          <div><b>Phone:</b> +91 9226948412</div>
+          <div><b>Email:</b> pawarwaterproofing86@gmail.com</div>
+          <div><b>Office:</b> Aundh, Pune, Maharashtra</div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <footer>
     <div class="container">
