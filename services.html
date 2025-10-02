@@ -62,6 +62,8 @@
       border:1px solid rgba(255,255,255,.08);
       background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
       color:var(--text); box-shadow:var(--shadow); cursor:pointer;
+      text-decoration: none;
+      font-weight:600;
     }
     .btn.primary {
       background:linear-gradient(180deg, #2f79ff, #2dc4ff);
@@ -72,8 +74,8 @@
       color:#041a10; border:none;
     }
     .btn.call {
-      background:linear-gradient(180deg, #ff914d, #ff5e3a);
-      color:#1a0a05; border:none;
+      background:linear-gradient(180deg, #ff5e3a, #ff2a2a);
+      color:#fff; border:none;
     }
 
     .grid { display:grid; gap:22px }
@@ -91,3 +93,255 @@
       border-radius:var(--radius);
       padding:18px;
       box-shadow:var(--shadow);
+      position:relative;
+    }
+    .chip {
+      font-size:12px; color:#0b1a0f; background:var(--ok);
+      padding:6px 10px; border-radius:999px; display:inline-block; margin-bottom:10px;
+    }
+    .card h3 { margin:8px 0 8px }
+    .card p { margin:0 0 12px; color:#cfe1ff }
+    .accordion { border-top:1px dashed rgba(255,255,255,.14); margin-top:10px; padding-top:10px }
+    details {
+      background:rgba(0,0,0,.14);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:14px;
+      padding:12px 14px;
+      margin:10px 0;
+    }
+    summary { cursor:pointer; font-weight:600 }
+    ul { margin:10px 0 0 18px }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="logo" aria-hidden="true"></span> Pawar Waterproofing</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+
+        <!-- WhatsApp Button -->
+        <a class="btn whatsapp" href="https://wa.me/919226948412?text=Hi%20Pawar%20Waterproofing%2C%20I%20need%20a%20site%20visit" target="_blank" rel="noopener">WhatsApp</a>
+
+        <!-- Call Button -->
+        <a class="btn call" href="tel:+919226948412">Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2>Services</h2>
+        <div class="muted">Tap to expand details: process, materials, and FAQs.</div>
+      </div>
+
+      <div class="grid cards">
+
+        <!-- Thermal Scanning -->
+        <article class="card">
+          <span class="chip">Leak detection</span>
+          <h3>Thermal Scanning</h3>
+          <p>Accurately locates hidden leakage points using an advanced thermal imaging machine.</p>
+          <div class="accordion">
+            <details><summary>Process — 5 steps</summary>
+              <ul>
+                <li>Inspect and identify seepage area</li>
+                <li>Clean and prepare the affected surface</li>
+                <li>Scan the area with the thermal imaging machine</li>
+                <li>Analyze thermal images and generate report</li>
+                <li>Explain results and suggest proper repair solutions</li>
+              </ul>
+            </details>
+            <details><summary>Technologies we use</summary>
+              <p class="muted">Professional thermal imaging scanner, analysis software, moisture detection tools.</p>
+            </details>
+            <details><summary>FAQs</summary>
+              <ul>
+                <li><b>Can it work on any surface?</b> Yes, it detects seepage on walls, slabs, bathrooms, and concealed areas.</li>
+                <li><b>How accurate is the scan?</b> Up to 99% accurate in pinpointing water leakage paths.</li>
+                <li><b>Does it cause damage?</b> No, it is a completely non-destructive testing method.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- PU Injection -->
+        <article class="card">
+          <span class="chip">Leak sealing</span>
+          <h3>PU Injection (Cracks & Joints)</h3>
+          <p>Stops active water seepage in basements, lift-pits, tanks and slabs by pressure-injecting expanding PU resin.</p>
+          <div class="accordion">
+            <details><summary>Process — 5 steps</summary>
+              <ul><li>Mark leak lines → drill packer points at 45°</li><li>Fix mechanical packers and flush</li><li>Inject hydrophilic/hydrophobic PU under pressure</li><li>Resin expands and blocks water pathways</li><li>Remove packers → patch and finish</li></ul>
+            </details>
+            <details><summary>Materials we use</summary>
+              <p class="muted">PU resin (fast/slow set), packers, injection pump, polymer mortar.</p>
+            </details>
+            <details><summary>FAQs</summary>
+              <ul><li><b>How long does it last?</b> Many years if structure is stable.</li><li><b>Can you inject during active leakage?</b> Yes, fast-foaming resin works on live leaks.</li><li><b>Is it visible after?</b> Only small patched drill marks remain.</li></ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Toilet Epoxy Grouting -->
+        <article class="card">
+          <span class="chip">Bathroom repair</span>
+          <h3>Toilet Epoxy Grouting</h3>
+          <p>Stops leakage from tile joints, corners, and plumbing gaps in toilets by using chemical-resistant epoxy grout.</p>
+          <div class="accordion">
+            <details><summary>Process — 5 steps</summary>
+              <ul>
+                <li>Clean old cement grout / dirt from tile joints</li>
+                <li>Dry surface and check gaps or hollow areas</li>
+                <li>Mix epoxy resin + hardener with filler powder</li>
+                <li>Apply into joints with rubber trowel, pressing deep</li>
+                <li>Clean surface with sponge before it hardens</li>
+              </ul>
+            </details>
+            <details><summary>Materials we use</summary>
+              <p class="muted">Epoxy resin + hardener, filler powder, spatula, rubber trowel, cleaning agents.</p>
+            </details>
+            <details><summary>FAQs</summary>
+              <ul>
+                <li><b>Why epoxy instead of cement grout?</b> Epoxy is waterproof, chemical-resistant, and won’t crack like cement grout.</li>
+                <li><b>Does it stop leakage below tiles?</b> Yes, it seals joints and prevents water seepage into slab or below bathrooms.</li>
+                <li><b>Is it easy to clean?</b> Yes, epoxy grout resists stains, dirt, and chemicals better than cement grout.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Basement -->
+        <article class="card">
+          <span class="chip">Underground</span>
+          <h3>Basement Waterproofing</h3>
+          <p>Prevents water entry into basements through walls, slabs and joints using membranes and coatings.</p>
+          <div class="accordion">
+            <details><summary>Process — 5 steps</summary>
+              <ul><li>Surface preparation</li><li>Crack/joint repairs</li><li>Apply primer + membrane coats</li><li>Lay protective screed/boards</li><li>Water testing</li></ul>
+            </details>
+            <details><summary>Materials we use</summary>
+              <p class="muted">Liquid membranes, bituminous sheets, protective screed, polymer mortars.</p>
+            </details>
+            <details><summary>FAQs</summary>
+              <ul><li><b>Will it stop all seepage?</b> Yes if applied on all entry points.</li><li><b>How long does it last?</b> 8–12 years with protection.</li><li><b>Can it be done from inside?</b> Yes, if outside access isn’t possible.</li></ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Podium -->
+        <article class="card">
+          <span class="chip">Heavy-duty</span>
+          <h3>Podium Waterproofing</h3>
+          <p>Protects podium slabs and parking decks with multi-layer waterproofing systems that handle traffic load.</p>
+          <div class="accordion">
+            <details><summary>Process — 5 steps</summary>
+              <ul><li>Surface cleaning</li><li>Crack filling</li><li>Primer + waterproof layer</li><li>Protective screed</li><li>Final finish (tiles/coat)</li></ul>
+            </details>
+            <details><summary>Materials we use</summary>
+              <p class="muted">Liquid membranes, APP/SBS sheets, screed concrete, PU coatings.</p>
+            </details>
+            <details><summary>FAQs</summary>
+              <ul><li><b>Is it load resistant?</b> Yes, systems designed for traffic.</li><li><b>Do tiles crack later?</b> Not if expansion joints are provided.</li><li><b>How often to redo?</b> Around 10+ years with maintenance.</li></ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Shade -->
+        <article class="card">
+          <span class="chip">Shops & sheds</span>
+          <h3>Commercial Shade Waterproofing</h3>
+          <p>Stops leakage in sheds and factories with coatings for metal and asbestos roofs.</p>
+          <div class="accordion">
+            <details><summary>Process — 5 steps</summary>
+              <ul><li>Roof cleaning</li><li>Treat overlaps & fasteners</li><li>Primer coat</li><li>2–3 elastomeric coats</li><li>Inspect post-rain</li></ul>
+            </details>
+            <details><summary>Materials we use</summary>
+              <p class="muted">Acrylic/PU elastomeric coatings, primers, sealant tapes.</p>
+            </details>
+            <details><summary>FAQs</summary>
+              <ul><li><b>Does it reduce heat?</b> White coatings reflect sunlight.</li><li><b>How long does it last?</b> 5–7 years typically.</li><li><b>Can work continue below?</b> Yes, no heavy noise/dust.</li></ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Roof -->
+        <article class="card">
+          <span class="chip">Terrace</span>
+          <h3>Roof Waterproofing</h3>
+          <p>Stops seepage through terraces using coatings, membranes or brickbat coba systems.</p>
+          <div class="accordion">
+            <details><summary>Process — 5 steps</summary>
+              <ul><li>Surface cleaning</li><li>Crack filling + slope correction</li><li>Primer coat</li><li>2–3 waterproof coats</li><li>Protective finish</li></ul>
+            </details>
+            <details><summary>Materials we use</summary>
+              <p class="muted">PU/Acrylic coatings, APP membranes, polymer mortars, tiles.</p>
+            </details>
+            <details><summary>FAQs</summary>
+              <ul><li><b>Does it stop dampness?</b> Yes, prevents water entry.</li><li><b>What about hot weather?</b> Reflective coats lower heat.</li><li><b>How often recoating?</b> 6–8 years on average.</li></ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Tank -->
+        <article class="card">
+          <span class="chip">Potable safe</span>
+          <h3>Tank Waterproofing</h3>
+          <p>Protects overhead/underground tanks from leakage and contamination with food-grade coatings.</p>
+          <div class="accordion">
+            <details><summary>Process — 5 steps</summary>
+              <ul><li>Drain and clean tank</li><li>Crack repairs</li><li>Primer coat</li><li>2–3 coats food-grade coating</li><li>Curing & refill</li></ul>
+            </details>
+            <details><summary>Materials we use</summary>
+              <p class="muted">Food-grade epoxy, cementitious coating, polymer mortar.</p>
+            </details>
+            <details><summary>FAQs</summary>
+              <ul><li><b>Is it drinking safe?</b> Yes, only food-grade products used.</li><li><b>How long protection?</b> 7–10 years.</li><li><b>Do we need empty tank?</b> Yes, tank must be dry for work.</li></ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Crack Filling -->
+        <article class="card">
+          <span class="chip">Surface repair</span>
+          <h3>Crack Filling</h3>
+          <p>Fills cracks with polymers, PU or epoxy to stop seepage and prep surface for coating.</p>
+          <div class="accordion">
+            <details><summary>Process — 5 steps</summary>
+              <ul><li>Open crack edges</li><li>Clean dust & loose material</li><li>Apply bonding agent</li><li>Fill with crack filler</li><li>Finish smooth</li></ul>
+            </details>
+            <details><summary>Materials we use</summary>
+              <p class="muted">PU sealant, epoxy, polymer mortar, bonding agents.</p>
+            </details>
+            <details><summary>FAQs</summary>
+              <ul><li><b>Will cracks reopen?</b> If structure settles, may need touch-up.</li><li><b>Works on wet cracks?</b> PU hydrophilic resin works on minor damp cracks.</li><li><b>Time for curing?</b> 2–4 hours for initial set.</li></ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Plumbing -->
+        <article class="card">
+          <span class="chip">Water supply</span>
+          <h3>Plumbing</h3>
+          <p>Repairs and installs pipelines, valves, faucets to prevent leaks and ensure proper water flow.</p>
+          <div class="accordion">
+            <details><summary>Process — 5 steps</summary>
+              <ul><li>Identify leak or pipe damage</li><li>Shut off water supply</li><li>Repair / replace faulty pipes or fittings</li><li>Test water flow & pressure</li><li>Clean area and provide maintenance tips</li></ul>
+            </details>
+            <details><summary>Materials we use</summary>
+              <p class="muted">PVC/CPVC pipes, GI pipes, valves, sealants, PTFE tape.</p>
+            </details>
+            <details><summary>FAQs</summary>
+              <ul><li><b>Do you handle both residential & commercial?</b> Yes, all types.</li><li><b>Emergency service?</b> Available on call.</li><li><b>Warranty?</b> Parts & workmanship guaranteed.</li></ul>
+            </details>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</body>
+</html>
