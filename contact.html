@@ -54,7 +54,8 @@
     .nav a{opacity:.9; margin-left:18px}
 
     .btn{
-      display:inline-flex; align-items:center; gap:10px;
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
       padding:12px 18px;
       border-radius:14px;
       border:1px solid rgba(255,255,255,.08);
@@ -62,6 +63,7 @@
       color:var(--text);
       box-shadow:var(--shadow);
       cursor:pointer;
+      text-align:center;
     }
     .btn.primary{
       background:linear-gradient(180deg, #2f79ff, #2dc4ff);
@@ -69,6 +71,10 @@
     }
     .btn.whatsapp{
       background:linear-gradient(180deg, #22d36e, #11a85e);
+      color:#041a10; border:none;
+    }
+    .btn.call{
+      background:linear-gradient(180deg, #34d058, #22863a);
       color:#041a10; border:none;
     }
 
@@ -85,7 +91,7 @@
       color:var(--text);
     }
     textarea{min-height:110px}
-    .row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    .row{display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px}
     .map{border-radius:var(--radius); overflow:hidden; border:1px solid rgba(255,255,255,.08); min-height:320px}
 
     footer{
@@ -121,12 +127,12 @@
             <input type="hidden" name="_subject" value="New enquiry — Pawar Waterproofing">
             <input type="hidden" name="_template" value="table">
 
-            <div class="row">
+            <div class="row" style="grid-template-columns:1fr 1fr;">
               <input name="name" placeholder="Your name" required />
               <input name="phone" placeholder="Phone / WhatsApp" required />
             </div>
 
-            <div class="row">
+            <div class="row" style="grid-template-columns:1fr 1fr;">
               <select name="problem" required>
                 <option value="">-- Select Problem --</option>
                 <option value="thermal">Thermal Scanning</option>
@@ -145,7 +151,8 @@
             <textarea name="message" placeholder="Tell us the issue: location, type of leakage, photos link…" required></textarea>
             <div class="row">
               <button class="btn primary" type="submit">Send Enquiry</button>
-              <a class="btn whatsapp" id="waBtn" href="#" target="_blank" rel="noopener">Share on WhatsApp</a>
+              <a class="btn whatsapp" id="waBtn" href="#" target="_blank" rel="noopener">WhatsApp</a>
+              <a class="btn call" href="tel:+919226948412">Call Now</a>
             </div>
             <small class="muted">By submitting, you agree to be contacted about this request.</small>
           </form>
