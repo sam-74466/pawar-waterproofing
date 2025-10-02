@@ -10,21 +10,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#0b1020;           /* page background */
-      --card:#121935;         /* card background */
-      --muted:#9fb0ff;        /* subtle text */
-      --text:#e8edff;         /* main text */
-      --accent:#3ea7ff;       /* buttons & links */
-      --accent-2:#6cf3ff;     /* gradients */
-      --ok:#1fd37a;           /* success */
-      --warn:#ffbf3e;         /* highlight */
-      --danger:#ff6363;       /* errors */
+      --bg:#0b1020;
+      --card:#121935;
+      --muted:#9fb0ff;
+      --text:#e8edff;
+      --accent:#3ea7ff;
+      --accent-2:#6cf3ff;
+      --ok:#1fd37a;
+      --warn:#ffbf3e;
+      --danger:#ff6363;
       --shadow: 0 10px 30px rgba(0,0,0,.35);
       --radius: 18px;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
-    body{margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial; color:var(--text); background:radial-gradient(1200px 600px at 10% -10%, #1a2250 0%, transparent 60%), radial-gradient(1200px 600px at 110% 10%, #1b3b6b 0%, transparent 60%), var(--bg);}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      color:var(--text);
+      background:radial-gradient(1200px 600px at 10% -10%, #1a2250 0%, transparent 60%),
+                 radial-gradient(1200px 600px at 110% 10%, #1b3b6b 0%, transparent 60%),
+                 var(--bg);
+    }
     a{color:var(--accent); text-decoration:none}
     img{max-width:100%; display:block}
     .container{width:min(1180px, 92%); margin:0 auto}
@@ -37,7 +44,6 @@
     .btn.primary{background:linear-gradient(180deg, #2f79ff, #2dc4ff); color:#041025; border:none}
     .btn.whatsapp{background:linear-gradient(180deg, #22d36e, #11a85e); color:#041a10; border:none}
     .grid{display:grid; gap:22px}
-
     /* Hero */
     .hero{position:relative; overflow:hidden; padding:92px 0 56px;}
     .hero .copy{display:grid; grid-template-columns:1.2fr .8fr; gap:34px; align-items:center}
@@ -45,57 +51,24 @@
     .h1{font-size: clamp(30px, 5vw, 58px); line-height:1.05; margin:14px 0 12px; font-weight:800}
     .lead{font-size: clamp(15px, 2.5vw, 18px); color:#cfe1ff; opacity:.95}
     .cta{display:flex; flex-wrap:wrap; gap:12px; margin-top:22px}
-
-    /* Fog + Rain layers */
+    /* Fog + Rain */
     .fog{pointer-events:none; position:absolute; inset:0; overflow:hidden}
     .fog span{position:absolute; width:60vw; height:60vw; background:radial-gradient(closest-side, rgba(255,255,255,.14), rgba(255,255,255,0)); filter:blur(18px); animation:fog 60s linear infinite; mix-blend-mode:screen}
     .fog span:nth-child(1){top:-10%; left:-20%;}
     .fog span:nth-child(2){bottom:-15%; right:-10%; animation-duration:70s}
     @keyframes fog{0%{transform:translateX(0)} 50%{transform:translateX(20px)} 100%{transform:translateX(0)}}
-
     .rain{pointer-events:none; position:absolute; inset:0}
     .drop{position:absolute; width:2px; height:14vh; background:linear-gradient(to bottom, rgba(108,243,255,.0), rgba(108,243,255,.9)); opacity:.35; animation:fall 1.2s linear infinite}
     @keyframes fall{to{transform:translateY(110vh)}}
-
     .hero-card{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow)}
-
     /* Section */
     section{padding:70px 0}
-    .section-head{display:flex; align-items:end; justify-content:space-between; margin-bottom:24px}
     h2{margin:0; font-size:clamp(24px, 3.4vw, 36px)}
     .muted{color:var(--muted); font-size:14px}
-
-    /* Services */
-    .cards{grid-template-columns:repeat(auto-fit, minmax(260px, 1fr))}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow); position:relative}
-    .chip{font-size:12px; color:#0b1a0f; background:var(--ok); padding:6px 10px; border-radius:999px; display:inline-block; margin-bottom:10px}
-    .card h3{margin:8px 0 8px}
-    .card p{margin:0 0 12px; color:#cfe1ff}
-    .accordion{border-top:1px dashed rgba(255,255,255,.14); margin-top:10px; padding-top:10px}
-    details{background:rgba(0,0,0,.14); border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:12px 14px; margin:10px 0}
-    summary{cursor:pointer; font-weight:600}
-    .pill{display:inline-flex; padding:6px 10px; border:1px solid rgba(255,255,255,.14); border-radius:999px; font-size:12px; margin:6px 6px 0 0}
-    ul{margin:10px 0 0 18px}
-
-    /* Gallery */
-    .gallery{grid-template-columns:repeat(auto-fit, minmax(220px, 1fr))}
-    .shot{position:relative; border-radius:16px; overflow:hidden; border:1px solid rgba(255,255,255,.08); background:#0b142b}
-    .shot img{width:100%; height:200px; object-fit:cover}
-
-    /* Contact */
-    form{display:grid; gap:12px}
-    input, textarea{width:100%; padding:12px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.14); background:#0e1733; color:var(--text)}
-    textarea{min-height:110px}
-    .row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
-    .map{border-radius:var(--radius); overflow:hidden; border:1px solid rgba(255,255,255,.08); min-height:320px}
-
     /* Footer */
     footer{padding:30px 0 70px; color:#bbcdfa; font-size:13px}
-
-    /* Small screens */
     @media (max-width:900px){
       .hero .copy{grid-template-columns:1fr}
-      .row{grid-template-columns:1fr}
     }
   </style>
 </head>
@@ -104,20 +77,17 @@
     <div class="container nav">
       <div class="brand"><span class="logo" aria-hidden></span> Pawar Waterproofing</div>
       <nav>
-        <a href="#services">Services</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-        <a class="btn whatsapp" href="https://wa.me/918605810586?text=Hi%20Pawar%20Waterproofing%2C%20I%20need%20a%20site%20visit" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a id="waBtn" class="btn whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
-    <div class="fog" aria-hidden>
-      <span></span><span></span>
-    </div>
+    <div class="fog" aria-hidden><span></span><span></span></div>
     <div class="rain" aria-hidden id="rainLayer"></div>
-
     <div class="container copy">
       <div>
         <span class="badge">Leak stop • Crack repair • Long-term warranty</span>
@@ -139,334 +109,13 @@
     </div>
   </section>
 
-  <section id="services">
-    <div class="container">
-      <div class="section-head">
-        <h2>Services</h2>
-        <div class="muted">Tap to expand details: process, materials, and FAQs.</div>
-      </div>
-
-      <div class="grid cards">
-        <!-- 1 PU Injection -->
-        <article class="card">
-          <span class="chip">Leak sealing</span>
-          <h3>PU Injection (Cracks & Joints)</h3>
-          <p>Stops active water seepage in basements, lift-pits, tanks and slabs by pressure-injecting expanding PU resin.</p>
-          <div class="accordion">
-            <details>
-              <summary>Process — 5 steps</summary>
-              <ul>
-                <li>Mark leak lines → drill packer points at 45°</li>
-                <li>Fix mechanical packers and flush</li>
-                <li>Inject hydrophilic/hydrophobic PU under pressure</li>
-                <li>Resin expands and blocks water pathways</li>
-                <li>Remove packers → patch and finish</li>
-              </ul>
-            </details>
-            <details>
-              <summary>Materials we use</summary>
-              <p class="muted">PU resin (fast/slow set), mechanical packers, injection pump, polymer-modified mortar for finishing.</p>
-            </details>
-            <details>
-              <summary>FAQs</summary>
-              <ul>
-                <li><b>How long does it last?</b> Many years if movement is minimal; cracks that move may need a top sealant joint.</li>
-                <li><b>Can you inject during active leakage?</b> Yes, we use fast-foaming resin for live leaks.</li>
-                <li><b>Will it stain the wall?</b> Holes are patched; only tiny dots remain.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- 2 Epoxy Grouting -->
-        <article class="card">
-          <span class="chip">Structural</span>
-          <h3>Epoxy Grouting (Honeycombs & Voids)</h3>
-          <p>Binds cracked RCC and fills voids to restore strength around beams, columns and slabs.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul>
-                <li>Crack mapping & core check</li>
-                <li>Surface sealing and port fixing</li>
-                <li>Low-viscosity epoxy injection</li>
-                <li>Curing & port removal</li>
-                <li>Reprofiling and finishing</li>
-              </ul>
-            </details>
-            <details><summary>Materials</summary>
-              <p class="muted">LV epoxy systems, surface sealer, injection ports, grinder, PPE.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul>
-                <li><b>Is it waterproofing?</b> It’s structural. For leakage we combine with PU or surface systems.</li>
-                <li><b>Any downtime?</b> 24–48 hours typical.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- 3 Basement Waterproofing -->
-        <article class="card">
-          <span class="chip">Below grade</span>
-          <h3>Basement Waterproofing</h3>
-          <p>Stops ground water ingress through retaining walls and raft junctions using injection + negative-side coatings.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul>
-                <li>Leak diagnosis & salt removal</li>
-                <li>PU injection at active seams</li>
-                <li>Crack chasing & polymer mortar</li>
-                <li>Crystal growth/elastic coating (2–3 coats)</li>
-                <li>Fillet coves & protective top coat</li>
-              </ul>
-            </details>
-            <details><summary>Materials</summary>
-              <p class="muted">PU resin, crystalline slurry, elastomeric coat, primers, polymer mortar.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul>
-                <li><b>Will the salt bloom return?</b> Not after proper neutralisation and coating system.</li>
-                <li><b>Do you need outside excavation?</b> Usually no; we treat from inside.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- 4 Podium Waterproofing -->
-        <article class="card">
-          <span class="chip">Decks</span>
-          <h3>Podium Waterproofing</h3>
-          <p>Seamless membranes under tile/landscape areas with proper slopes and drain detailing.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul>
-                <li>Substrate prep & slope correction</li>
-                <li>Primer & detailing at drains upstands</li>
-                <li>PU/Acrylic membrane in multiple coats</li>
-                <li>Protection screed</li>
-                <li>Tile/finish installation</li>
-              </ul>
-            </details>
-            <details><summary>Materials</summary>
-              <p class="muted">PU/Acrylic membranes, geotextile at joints, primers, bond coats.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul>
-                <li><b>Movement cracks?</b> We add joints and mesh to control them.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- 5 Shade/Canopy Waterproofing -->
-        <article class="card">
-          <span class="chip">Commercial</span>
-          <h3>Commercial Shade Waterproofing</h3>
-          <p>Seals leaks at MS sheds and polycarbonate roofs with UV-stable sealants and coatings.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul>
-                <li>Nut-bolt & overlap sealing</li>
-                <li>Rust treatment</li>
-                <li>PU sealant for joints</li>
-                <li>UV roof coat application</li>
-                <li>Final inspection under water spray</li>
-              </ul>
-            </details>
-            <details><summary>Materials</summary>
-              <p class="muted">PU sealant, butyl tapes, anti-rust primer, UV reflective coats.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul>
-                <li><b>Heat reduction?</b> Yes, reflective coats drop surface temp noticeably.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- 6 Roof Waterproofing -->
-        <article class="card">
-          <span class="chip">Terraces</span>
-          <h3>Roof/Terrace Waterproofing</h3>
-          <p>Long-life membrane systems that bridge cracks and handle ponding with correct slope and outlets.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul>
-                <li>Surface cleaning & crack cutting</li>
-                <li>Polymer repair mortar</li>
-                <li>Primer + 2–3 coats elastomeric membrane</li>
-                <li>Fabric reinforcement at critical areas</li>
-                <li>Topcoat/tiles as per design</li>
-              </ul>
-            </details>
-            <details><summary>Materials</summary>
-              <p class="muted">Acrylic/PU membranes, polyester fabric, primers, reflective topcoats.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul>
-                <li><b>Can we walk on it?</b> With topcoat yes; heavy use needs tiles or screed.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- 7 Tank Waterproofing -->
-        <article class="card">
-          <span class="chip">Potable-safe</span>
-          <h3>Overhead/UG Tank Waterproofing</h3>
-          <p>Food-grade coatings and joint sealing for leak-proof, hygienic water tanks.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul>
-                <li>Drain, clean, remove algae</li>
-                <li>PU injection at live leaks</li>
-                <li>Patching & coves</li>
-                <li>Food-grade coating (2–3 coats)</li>
-                <li>Final wash & refill after cure</li>
-              </ul>
-            </details>
-            <details><summary>Materials</summary>
-              <p class="muted">NSF/IS-approved coatings, PU resin, polymer mortar.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul>
-                <li><b>Is water safe?</b> Yes, we use potable-safe systems after full cure.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- 8 Crack Filling -->
-        <article class="card">
-          <span class="chip">Finishing</span>
-          <h3>Crack Filling & Sealant Joints</h3>
-          <p>Treats shrinkage cracks and movement joints to stop seepage and paint failure.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul>
-                <li>V-groove cracks</li>
-                <li>Dust removal & primer</li>
-                <li>Polymer putty or sealant filling</li>
-                <li>Mesh at wide areas</li>
-                <li>Finish & repaint</li>
-              </ul>
-            </details>
-            <details><summary>Materials</summary>
-              <p class="muted">Acrylic/PU sealants, fiber mesh, bonding primer, exterior putty.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul>
-                <li><b>Will cracks return?</b> Movement joints need flexible sealant and may need periodic checks.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- 9 Plumbing -->
-        <article class="card">
-          <span class="chip">Source fix</span>
-          <h3>Plumbing Leak Detection & Repair</h3>
-          <p>We locate and fix pipe leaks, faulty traps and joints that cause damp patches and seepage.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul>
-                <li>Pressure & dye tests</li>
-                <li>Chasing with minimal breakage</li>
-                <li>Pipe/joint replacement</li>
-                <li>Waterproof detail at chases</li>
-                <li>Replaster & tidy finish</li>
-              </ul>
-            </details>
-            <details><summary>Materials</summary>
-              <p class="muted">UPVC/CPVC fittings, valves, primers, polymer mortar, sealants.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul>
-                <li><b>Can you do night work?</b> Yes on request for commercial sites.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="gallery">
-    <div class="container">
-      <div class="section-head">
-        <h2>Gallery</h2>
-        <div class="muted">Recent site photos (before → after)</div>
-      </div>
-      <div class="grid gallery">
-        <figure class="shot"><img src="https://imagizer.imageshack.com/img924/8041/HXuMIL.jpg " alt="Basement injection work"/></figure>
-        <figure class="shot"><img src="https://imagizer.imageshack.com/img922/245/A3rD7s.jpg" alt="Terrace coating in progress"/></figure>
-        <figure class="shot"><img src="https://imagizer.imageshack.com/img924/8929/w4F1xR.jpg" alt="Podium detailing at drain"/></figure>
-        <figure class="shot"><img src="https://imagizer.imageshack.com/img922/5958/iwWvQM.jpg" alt="Tank internal coating"/></figure>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-  <div class="container">
-    <div class="section-head">
-      <h2>Contact</h2>
-      <div class="muted">Quick response. Share photos or request a free site visit.</div>
-    </div>
-    <div class="grid" style="grid-template-columns:1.1fr .9fr; gap:22px">
-      <div>
-        <!-- Replace action URL with your FormSubmit endpoint or Google Apps Script web app URL -->
-        <form id="contactForm" action="https://formsubmit.co/pawarwaterproofing86@gmail.com" method="POST">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="New enquiry — Pawar Waterproofing">
-          <input type="hidden" name="_template" value="table">
-
-          <div class="row">
-            <input name="name" placeholder="Your name" required />
-            <input name="phone" placeholder="Phone / WhatsApp" required />
-          </div>
-
-          <!-- Removed email input -->
-          <div class="row">
-            <select name="problem" required>
-              <option value="">-- Select Problem --</option>
-              <option value="thermal">Thermal Scanning</option>
-              <option value="roof">Roof Waterproofing</option>
-              <option value="tank">Tank Waterproofing</option>
-              <option value="basement">Basement Waterproofing</option>
-              <option value="podium">Podium Waterproofing</option>
-              <option value="shade">Commercial Shade Waterproofing</option>
-              <option value="crack">Crack Filling</option>
-              <option value="plumbing">Plumbing Leak Repair</option>
-              <option value="other">Other</option>
-            </select>
-            <input name="city" placeholder="Area / City" value="Pune" />
-          </div>
-
-          <textarea name="message" placeholder="Tell us the issue: location, type of leakage, photos link…" required></textarea>
-          <div class="row">
-            <button class="btn primary" type="submit">Send Enquiry</button>
-            <a class="btn whatsapp" id="waBtn" href="#" target="_blank" rel="noopener">Share on WhatsApp</a>
-          </div>
-          <small class="muted">By submitting, you agree to be contacted about this request.</small>
-        </form>
-      </div>
-      <div>
-        <div class="map">
-          <!-- Aundh, Pune — no API key needed -->
-          <iframe title="Aundh Pune Map" width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.763750626012!2d73.80374097519735!3d18.541086468918457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2c9a3a12c1%3A0x3a3a6a0d9d9e4a3!2sAundh%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1693399999999"></iframe>
-        </div>
-        <div style="margin-top:12px">
-          <div><b>Phone:</b> +91 8605810586</div>
-          <div><b>Email:</b> pawarwaterproofing86@gmail.com</div>
-          <div><b>Office:</b> Aundh, Pune, Maharashtra</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+  <!-- Example form (so JS works) -->
+  <form id="contactForm" style="display:none">
+    <input type="text" name="name" value="Test Name">
+    <input type="text" name="phone" value="9876543210">
+    <input type="text" name="city" value="Pune">
+    <textarea name="message">Need waterproofing</textarea>
+  </form>
 
   <footer>
     <div class="container">
@@ -474,7 +123,7 @@
         <span class="logo" aria-hidden style="width:28px; height:28px"></span>
         <div><b>Pawar Waterproofing</b> • Since 2015 • GST & invoices available</div>
       </div>
-      <div style="margin-top:8px" class="muted">© </span> Pawar Waterproofing. All rights reserved.</div>
+      <div style="margin-top:8px" class="muted">© <span id="year"></span> Pawar Waterproofing. All rights reserved.</div>
     </div>
   </footer>
 
@@ -482,7 +131,7 @@
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Light raindrops for the hero background
+    // Light raindrops
     const rainLayer = document.getElementById('rainLayer');
     const drops = Math.min(60, Math.floor(window.innerWidth / 14));
     for(let i=0;i<drops;i++){
@@ -495,15 +144,21 @@
       rainLayer.appendChild(d);
     }
 
-    // Simple scroll reveal
+    // Scroll reveal
     const observer = new IntersectionObserver((entries)=>{
       entries.forEach(e=>{
-        if(e.isIntersecting){ e.target.animate([{opacity:0, transform:'translateY(12px)'},{opacity:1, transform:'translateY(0)'}], {duration:500, easing:'ease-out', fill:'forwards'}); observer.unobserve(e.target); }
+        if(e.isIntersecting){
+          e.target.animate(
+            [{opacity:0, transform:'translateY(12px)'},{opacity:1, transform:'translateY(0)'}],
+            {duration:500, easing:'ease-out', fill:'forwards'}
+          );
+          observer.unobserve(e.target);
+        }
       })
     }, {threshold: .12});
     document.querySelectorAll('.card, .shot, .hero-card').forEach(el=>observer.observe(el));
 
-    // WhatsApp prefill from form
+    // WhatsApp prefill
     const waBtn = document.getElementById('waBtn');
     const form = document.getElementById('contactForm');
     function buildWA(){
@@ -512,15 +167,10 @@
       const city = form.city.value.trim();
       const msg = form.message.value.trim();
       const text = `Hi Pawar Waterproofing, I need help.\nName: ${name}\nPhone: ${phone}\nCity: ${city}\nDetails: ${msg}`;
-      const to = '918605810586'; // <-- put your number here (no +)
+      const to = '918605810586';
       return `https://wa.me/${to}?text=${encodeURIComponent(text)}`;
     }
-    waBtn.addEventListener('click', (e)=>{ waBtn.href = buildWA(); });
-
-    // FormSubmit helper — change YOUR_EMAIL@example.com in the form action
-    form.addEventListener('submit', (e)=>{
-      // Optional: add basic validation or show toast
-    });
+    waBtn.addEventListener('click', ()=>{ waBtn.href = buildWA(); });
   </script>
 </body>
 </html>
