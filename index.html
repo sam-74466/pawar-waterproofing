@@ -81,7 +81,7 @@
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
         <a id="waBtn" class="btn whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
-        <a id="callBtn" class="btn primary" href="tel:+918605810586">Call Us</a>
+        <a id="callBtn" class="btn primary" href="tel:+919226948412">Call Us</a>
       </nav>
     </div>
   </header>
@@ -168,7 +168,7 @@
       const city = form.city.value.trim();
       const msg = form.message.value.trim();
       const text = `Hi Pawar Waterproofing, I need help.\nName: ${name}\nPhone: ${phone}\nCity: ${city}\nDetails: ${msg}`;
-      const to = '918605810586';
+      const to = '919226948412';
       return `https://wa.me/${to}?text=${encodeURIComponent(text)}`;
     }
     waBtn.addEventListener('click', ()=>{ waBtn.href = buildWA(); });
