@@ -1,305 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-  <script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KKGM3DVT');
-  </script>
-  <!-- End Google Tag Manager -->
-
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pawar Waterproofing — Protect Every Surface</title>
-  <meta name="description" content="Pawar Waterproofing: PU Injection, Epoxy Grouting, Basement, Podium, Roof, Tank Waterproofing, Crack Filling, Plumbing. Expert service in Pune & nearby." />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pawar Waterproofing - Waterproofing Experts in Pune</title>
+  <meta name="description" content="Protect your home from leaks with Pawar Waterproofing. 8+ years of experience, 1500+ happy clients, trusted across Pune.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg: #0b1020;
-      --card: #121935;
-      --muted: #9fb0ff;
-      --text: #e8edff;
-      --accent: #3ea7ff;
-      --accent-2: #6cf3ff;
-      --ok: #1fd37a;
-      --warn: #ffbf3e;
-      --danger: #ff6363;
-      --shadow: 0 10px 30px rgba(0, 0, 0, .35);
-      --radius: 18px;
+      --primary: #007bff;
+      --dark: #0f1a2b;
+      --light: #f5f7fb;
+      --radius: 10px;
+      --transition: 0.3s ease;
     }
 
-    * { box-sizing: border-box }
-    html, body { height: 100%; scroll-behavior: smooth }
     body {
       margin: 0;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      color: var(--text);
-      background:
-        radial-gradient(1200px 600px at 10% -10%, #1a2250 0%, transparent 60%),
-        radial-gradient(1200px 600px at 110% 10%, #1b3b6b 0%, transparent 60%),
-        var(--bg);
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light);
+      color: #333;
+      overflow-x: hidden;
     }
 
-    a { color: var(--accent); text-decoration: none }
-    img { max-width: 100%; display: block }
-    .container { width: min(1180px, 92%); margin: 0 auto }
-
+    /* HEADER / NAVBAR */
     header {
+      background: var(--dark);
+      padding: 0.8rem 2rem;
       position: sticky;
       top: 0;
-      z-index: 50;
-      backdrop-filter: saturate(140%) blur(8px);
-      background: linear-gradient(180deg, rgba(11, 16, 32, .9), rgba(11, 16, 32, .6));
-      border-bottom: 1px solid rgba(255, 255, 255, .06)
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    .nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0 }
-    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: .3px }
-    .brand .logo {
-      width: 38px; height: 38px; border-radius: 12px;
-      background: conic-gradient(from 180deg, var(--accent), var(--accent-2));
-      box-shadow: 0 6px 18px rgba(62, 167, 255, .4)
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-decoration: none;
     }
 
-    .nav a { opacity: .9; margin-left: 18px }
-
-    .btn {
-      display: inline-flex; align-items: center; gap: 10px;
-      padding: 12px 18px; border-radius: 14px;
-      border: 1px solid rgba(255, 255, 255, .08);
-      background: linear-gradient(180deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, .02));
-      color: var(--text); box-shadow: var(--shadow); cursor: pointer
+    .logo img {
+      height: 40px;
+      width: 40px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: #fff;
     }
 
-    .btn.primary { background: linear-gradient(180deg, #2f79ff, #2dc4ff); color: #041025; border: none }
-    .btn.whatsapp { background: linear-gradient(180deg, #22d36e, #11a85e); color: #041a10; border: none }
-    .grid { display: grid; gap: 22px }
-
-    /* Hero */
-    .hero { position: relative; overflow: hidden; padding: 92px 0 56px; }
-    .hero .copy { display: grid; grid-template-columns: 1.2fr .8fr; gap: 34px; align-items: center }
-    .badge {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 8px 12px; border-radius: 999px;
-      background: rgba(255, 255, 255, .06);
-      border: 1px solid rgba(255, 255, 255, .08);
-      font-size: 13px; color: var(--muted)
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
     }
-    .h1 { font-size: clamp(30px, 5vw, 58px); line-height: 1.05; margin: 14px 0 12px; font-weight: 800 }
-    .lead { font-size: clamp(15px, 2.5vw, 18px); color: #cfe1ff; opacity: .95 }
-    .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px }
 
-    /* Fog + Rain */
-    .fog { pointer-events: none; position: absolute; inset: 0; overflow: hidden }
-    .fog span {
-      position: absolute; width: 60vw; height: 60vw;
-      background: radial-gradient(closest-side, rgba(255, 255, 255, .14), rgba(255, 255, 255, 0));
-      filter: blur(18px); animation: fog 60s linear infinite; mix-blend-mode: screen
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: var(--transition);
     }
-    .fog span:nth-child(1) { top: -10%; left: -20%; }
-    .fog span:nth-child(2) { bottom: -15%; right: -10%; animation-duration: 70s }
-    @keyframes fog { 0% { transform: translateX(0) } 50% { transform: translateX(20px) } 100% { transform: translateX(0) } }
 
-    .rain { pointer-events: none; position: absolute; inset: 0 }
-    .drop {
-      position: absolute; width: 2px; height: 14vh;
-      background: linear-gradient(to bottom, rgba(108, 243, 255, .0), rgba(108, 243, 255, .9));
-      opacity: .35; animation: fall 1.2s linear infinite
+    .nav-links a:hover {
+      color: var(--primary);
     }
-    @keyframes fall { to { transform: translateY(110vh) } }
 
-    .hero-card {
-      background: linear-gradient(180deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .02));
-      border: 1px solid rgba(255, 255, 255, .08);
+    /* HERO SECTION */
+    .hero {
+      background: linear-gradient(rgba(15, 26, 43, 0.7), rgba(15, 26, 43, 0.8)),
+        url('https://images.unsplash.com/photo-1581091215367-59ab6b4a2b8e?auto=format&fit=crop&w=1200&q=80') center/cover fixed;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+
+    .hero .btn {
+      background: var(--primary);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .hero .btn:hover {
+      background: #0056b3;
+    }
+
+    /* STATS SECTION */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      text-align: center;
+      padding: 60px 20px;
+      background: #fff;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .stat {
+      background: var(--light);
       border-radius: var(--radius);
-      padding: 18px; box-shadow: var(--shadow)
+      padding: 25px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+      transition: var(--transition);
     }
 
-    .pill {
-      display: inline-block;
-      background: rgba(255,255,255,0.08);
-      padding: 6px 10px;
-      border-radius: 8px;
-      margin: 3px 5px 0 0;
-      font-size: 13px;
-      color: #cfe1ff;
+    .stat:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     }
 
-    /* Section */
-    section { padding: 70px 0 }
-    h2 { margin: 0; font-size: clamp(24px, 3.4vw, 36px) }
-    .muted { color: var(--muted); font-size: 14px }
-
-    /* Form Styling */
-    form {
-      margin-top: 40px; background: rgba(255, 255, 255, 0.05);
-      padding: 24px; border-radius: var(--radius);
-      border: 1px solid rgba(255, 255, 255, .1);
-      box-shadow: var(--shadow);
-      max-width: 500px;
+    .stat i {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 10px;
     }
-    input, textarea {
-      width: 100%; padding: 10px 12px; margin-top: 8px;
-      border-radius: 8px; border: 1px solid rgba(255, 255, 255, .15);
-      background: rgba(255, 255, 255, 0.08); color: #fff;
-      font-family: inherit; font-size: 15px;
-    }
-    label { font-weight: 500; font-size: 14px }
-    textarea { resize: vertical; min-height: 100px }
-    form button { margin-top: 12px; width: 100%; justify-content: center }
 
+    .stat h3 {
+      margin: 5px 0;
+      font-size: 1.4rem;
+      color: var(--dark);
+    }
+
+    .stat p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    /* HIGHLIGHTS */
+    .highlights {
+      text-align: center;
+      padding: 70px 20px;
+      background: linear-gradient(135deg, #e3f2fd, #f8f9ff);
+    }
+
+    .highlights h2 {
+      color: var(--dark);
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .highlight {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: var(--transition);
+    }
+
+    .highlight:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .highlight i {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .highlight h4 {
+      margin-bottom: 8px;
+      color: var(--dark);
+    }
+
+    /* TESTIMONIALS PREVIEW */
+    .testimonials {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .testimonials h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .testimonial {
+      max-width: 700px;
+      margin: auto;
+      font-style: italic;
+      color: #ddd;
+    }
+
+    .testimonial span {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    /* FOOTER */
     footer {
-      padding: 30px 0 70px; color: #bbcdfa; font-size: 13px
+      background: #0f1a2b;
+      color: #fff;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 0.9rem;
     }
 
-    @media (max-width:900px) {
-      .hero .copy { grid-template-columns: 1fr }
+    /* FLOATING BUTTONS */
+    .floating-buttons {
+      position: fixed;
+      right: 20px;
+      bottom: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 100;
+    }
+
+    .float-btn {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--primary);
+      color: #fff;
+      font-size: 1.2rem;
+      text-decoration: none;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      transition: var(--transition);
+    }
+
+    .float-btn:hover {
+      background: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .float-btn.quote {
+      width: auto;
+      padding: 10px 15px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
     }
   </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17619677131">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17619677131');
-</script>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKGM3DVT"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
   <header>
-    <div class="container nav">
-      <div class="brand"><span class="logo" aria-hidden></span> Pawar Waterproofing</div>
-      <nav>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-        <a id="callBtn" class="btn primary" href="tel:+919226948412">Call Us</a>
-      </nav>
-    </div>
+    <a href="#" class="logo">
+      <img src="https://i.postimg.cc/Xv53H14t/PW-BG-REMOVE.jpg" alt="Pawar Waterproofing Logo">
+      Pawar Waterproofing
+    </a>
+    <nav class="nav-links">
+     
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+
+    </nav>
   </header>
 
   <section class="hero">
-    <div class="fog" aria-hidden><span></span><span></span></div>
-    <div class="rain" aria-hidden id="rainLayer"></div>
-    <div class="container copy">
-      <div>
-        <span class="badge">Leak stop • Crack repair • Long-term warranty</span>
-        <h1 class="h1">Stop leaks before they start.</h1>
-        <p class="lead">We waterproof basements, roofs, tanks, podiums and more. Clean work, clear timelines, and honest pricing across Pune and nearby.</p>
-        <div class="cta">
-          <a class="btn primary" href="services.html">Explore Services</a>
-          <a class="btn" href="#contactForm">Get a Free Inspection</a>
-        </div>
-        <div style="margin-top:14px" class="muted">Mon–Sun • 8:00–20:00 • Pune</div>
+    <h1>Protect Your Home from Leaks</h1>
+    <p>Expert waterproofing services trusted by 1500+ clients in Pune. 8+ years of excellence.</p>
+    <a href="contact.html" class="btn">Get a Free Quote</a>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><i class="fas fa-calendar-check"></i><h3>8+ Years</h3><p>Industry Experience</p></div>
+    <div class="stat"><i class="fas fa-users"></i><h3>1500+</h3><p>Happy Clients</p></div>
+    <div class="stat"><i class="fas fa-star"></i><h3>4.9 / 5</h3><p>Average Rating</p></div>
+    <div class="stat"><i class="fas fa-city"></i><h3>1500+</h3><p>Projects Completed</p></div>
+  </section>
+
+  <section class="highlights">
+    <h2>Why Choose Pawar Waterproofing?</h2>
+    <div class="highlight-grid">
+      <div class="highlight">
+        <i class="fas fa-tools"></i>
+        <h4>Advanced Techniques</h4>
+        <p>We use top-grade PU, epoxy, and membrane systems for reliable sealing.</p>
       </div>
-      <div class="hero-card">
-        <h3 style="margin:8px 0">Why choose us</h3>
-        <div class="pill">IS:2645 grade materials</div>
-        <div class="pill">Site photos & daily updates</div>
-        <div class="pill">Warranty on scope</div>
-        <p style="margin-top:10px">We use branded membranes, primers and injection resins with tested coverage. You get a neat finish and no mess.</p>
+      <div class="highlight">
+        <i class="fas fa-certificate"></i>
+        <h4>Certified Team</h4>
+        <p>Our trained professionals ensure precision and long-lasting protection.</p>
+      </div>
+      <div class="highlight">
+        <i class="fas fa-clock"></i>
+        <h4>On-Time Delivery</h4>
+        <p>Quick, clean, and efficient service every time—without compromising quality.</p>
+      </div>
+      <div class="highlight">
+        <i class="fas fa-thumbs-up"></i>
+        <h4>Trusted Across Pune</h4>
+        <p>Serving homes and businesses in Warje, Baner, Hinjewadi, and all PMC & PCMC areas.</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact Form -->
-  <section id="contact">
-    <div class="container">
-      <h2>Get in Touch</h2>
-      <p class="muted">Fill the form below and send your query directly on WhatsApp.</p>
-      <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" placeholder="Your name" required>
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      "After years of roof leakage, Pawar Waterproofing fixed it permanently. Excellent service and support!"
+      <span>— Rajesh M., Aundh</span>
+<div class="testimonial-grid">
+      <div class="testimonial">
+        <p>“Pawar Waterproofing team solved our terrace leakage in one day. Excellent service and reasonable cost.”</p>
+        <h4>– Rahul Deshmukh ⭐⭐⭐⭐⭐</h4>
+      </div>
+      <div class="testimonial">
+        <p>“Very professional and punctual. They used quality material and provided warranty. Highly recommended.”</p>
+        <h4>– Neha Patil ⭐⭐⭐⭐⭐</h4>
+      </div>
+      <div class="testimonial">
+        <p>“Best waterproofing service in Pune. They fixed our basement leakage permanently. Great experience!”</p>
+        <h4>– Amit Kulkarni ⭐⭐⭐⭐☆</h4>
+      </div>
+      <div class="testimonial">
+        <p>“Quick response and good behavior from the team. After 1 year, no leakage again. Very satisfied.”</p>
+        <h4>– Sneha More ⭐⭐⭐⭐⭐</h4>
+      </div>
+    </div>
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" name="phone" id="phone" placeholder="Your mobile number" required>
-
-        <label for="city">City:</label>
-        <input type="text" name="city" id="city" placeholder="Your city" required>
-
-        <label for="message">Message:</label>
-        <textarea name="message" id="message" placeholder="Describe your issue" required></textarea>
-
-        <button type="button" id="waBtn" class="btn whatsapp">Send on WhatsApp</button>
-      </form>
+    <div class="google-link">
+      <a href="https://share.google/MoaE7UyIW7UTIHcPb" target="_blank">View More Reviews on Google →</a>
+    </div>
     </div>
   </section>
 
   <footer>
-    <div class="container">
-      <div style="display:flex; align-items:center; gap:12px">
-        <span class="logo" aria-hidden style="width:28px; height:28px"></span>
-        <div><b>Pawar Waterproofing</b> • Since 2015 • GST & invoices available</div>
-      </div>
-      <div style="margin-top:8px" class="muted">© <span id="year"></span> Pawar Waterproofing. All rights reserved.</div>
-    </div>
+    © 2016 Pawar Waterproofing | All Rights Reserved
   </footer>
 
+  <div class="floating-buttons">
+    <a href="tel:+919226948412" class="float-btn"><i class="fas fa-phone"></i></a>
+    <a href="https://wa.me/919226948412" class="float-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="contact.html" class="float-btn quote">Get Free Quote</a>
+  </div>
+
   <script>
-    // Auto Year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Rain animation
-    const rainLayer = document.getElementById('rainLayer');
-    const drops = Math.min(60, Math.floor(window.innerWidth / 14));
-    for (let i = 0; i < drops; i++) {
-      const d = document.createElement('span');
-      d.className = 'drop';
-      d.style.left = Math.random() * 100 + 'vw';
-      d.style.animationDelay = (-Math.random() * 1.2) + 's';
-      d.style.animationDuration = (0.9 + Math.random() * 0.9) + 's';
-      d.style.height = (8 + Math.random() * 20) + 'vh';
-      rainLayer.appendChild(d);
-    }
-
-    // Scroll reveal
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.animate(
-            [{ opacity: 0, transform: 'translateY(12px)' }, { opacity: 1, transform: 'translateY(0)' }],
-            { duration: 500, easing: 'ease-out', fill: 'forwards' }
-          );
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: .12 });
-    document.querySelectorAll('.hero-card, form').forEach(el => observer.observe(el));
-
-    // WhatsApp prefill
-    const waBtn = document.getElementById('waBtn');
-    const form = document.getElementById('contactForm');
-
-    waBtn.addEventListener('click', () => {
-      const name = form.name.value.trim();
-      const phone = form.phone.value.trim();
-      const city = form.city.value.trim();
-      const msg = form.message.value.trim();
-
-      if (!name || !phone) {
-        alert('Please enter your name and phone number before continuing.');
-        return;
-      }
-
-      const text = `Hi Pawar Waterproofing, I need help.\nName: ${name}\nPhone: ${phone}\nCity: ${city}\nDetails: ${msg}`;
-      const to = '919226948412';
-      const waLink = `https://wa.me/${to}?text=${encodeURIComponent(text)}`;
-      window.open(waLink, '_blank');
-    });
+    // You can later add scroll animations or counters
   </script>
 </body>
 </html>
