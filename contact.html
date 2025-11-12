@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - Pawar Waterproofing</title>
   <meta name="description" content="Contact Pawar Waterproofing for expert waterproofing services in Pune and Mumbai. Get a free quote today.">
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
     }
 
     body {
-      background: #f7f9fb;
+      background-color: #f7f9fb;
       color: #222;
+      scroll-behavior: smooth;
     }
 
     /* Navbar */
-    nav {
-      width: 100%;
-      background: #fff;
-      padding: 15px 8%;
+    header {
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 100;
+      width: 100%;
+      background: #ffffff;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 15px 8%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+      transition: 0.3s;
     }
 
-    nav h1 {
-      color: #0056b3;
+    header .logo {
       font-size: 24px;
       font-weight: 700;
+      color: #0056b3;
+      letter-spacing: 0.5px;
     }
 
-    .nav-links {
+    nav ul {
       display: flex;
+      list-style: none;
       gap: 25px;
     }
 
-    .nav-links a {
+    nav ul li a {
       text-decoration: none;
       color: #0056b3;
       font-weight: 600;
       transition: 0.3s;
+      padding: 8px 12px;
+      border-radius: 5px;
     }
 
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: #ff6600;
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #0056b3;
+      color: #fff;
     }
 
     /* Contact Section */
     section {
+      padding: 120px 8% 60px;
       display: flex;
       flex-wrap: wrap;
-      padding: 120px 8% 60px;
       gap: 40px;
       align-items: flex-start;
     }
@@ -168,15 +175,17 @@
       box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
     }
 
+    /* Responsive */
     @media (max-width: 768px) {
-      nav {
+      header {
         flex-direction: column;
         padding: 10px 5%;
       }
 
-      .nav-links {
+      nav ul {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 15px;
       }
 
       section {
@@ -194,18 +203,20 @@
 
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <h1>Pawar Waterproofing</h1>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="about.html">About Us</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html" class="active">Contact</a>
-    </div>
-  </nav>
+  <!-- Header / Navbar -->
+  <header>
+    <div class="logo">Pawar Waterproofing</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Contact Section -->
   <section>
@@ -254,6 +265,7 @@
     <a href="https://wa.me/919226948412" target="_blank">💬 WhatsApp</a>
   </div>
 
+  <!-- Footer -->
   <footer>
     © 2016 Pawar Waterproofing | All Rights Reserved
   </footer>
@@ -268,6 +280,5 @@
       return true;
     }
   </script>
-
 </body>
 </html>
