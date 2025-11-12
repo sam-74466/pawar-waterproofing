@@ -1,73 +1,198 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tank Waterproofing - Pawar Waterproofing</title>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tank Waterproofing - Pawar Waterproofing</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css"></head><body>
+<style>
+/* ===== RESET & BASE ===== */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#f7f8fa;color:#222;line-height:1.6;}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block;border-radius:10px;}
+.container{width:90%;max-width:1100px;margin:auto;}
+h1,h2,h3,h4{font-weight:600;color:#111;}
+ul{list-style:disc;margin-left:20px;}
 
+/* ===== NAV ===== */
+nav{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.08);position:sticky;top:0;z-index:100;}
+.nav-wrap{display:flex;justify-content:space-between;align-items:center;padding:10px 20px;}
+.nav-wrap img{height:40px;margin-right:8px;vertical-align:middle;}
+.brand{font-weight:700;font-size:1.1rem;display:flex;align-items:center;gap:8px;color:#0077cc;}
+.nav-links a{margin:0 10px;font-weight:500;transition:.3s;color:#333;}
+.nav-links a:hover{color:#0077cc;}
+
+/* ===== HERO ===== */
+.hero{background:url('https://i.postimg.cc/d3Tnyfdt/IMG-20250717-WA0075.jpg') center/cover no-repeat;height:250px;display:flex;align-items:center;text-align:center;}
+.hero h1{font-size:2rem;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,0.6);}
+.hero p{color:#eaeaea;font-size:1rem;}
+
+/* ===== MAIN CARD ===== */
+.card{background:#fff;border-radius:10px;padding:18px;box-shadow:0 2px 8px rgba(0,0,0,0.08);}
+.service-hero{display:grid;grid-template-columns:2fr 1fr;gap:20px;}
+.service-hero h2{margin-bottom:8px;}
+.meta{display:flex;gap:10px;margin:10px 0;}
+.chip{background:#e0f2fe;color:#0369a1;padding:5px 10px;border-radius:50px;font-size:.85rem;}
+.cta-row{display:flex;gap:10px;margin-top:16px;}
+.btn{background:#0077cc;color:#fff;padding:10px 16px;border-radius:6px;transition:.3s;}
+.btn:hover{opacity:.85;}
+
+/* ===== FAQ ===== */
+.q{font-weight:600;margin-top:10px;}
+.a{margin-left:10px;color:#555;margin-bottom:8px;}
+
+/* ===== GALLERY GRID ===== */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:8px;}
+.gallery-grid img{cursor:pointer;transition:.3s;}
+.gallery-grid img:hover{transform:scale(1.05);}
+
+/* ===== FOOTER ===== */
+footer{text-align:center;background:#111;color:#eee;padding:15px 10px;margin-top:30px;font-size:.9rem;}
+
+/* ===== FLOATING BUTTONS ===== */
+.floating{position:fixed;bottom:20px;right:20px;display:flex;flex-direction:column;gap:10px;z-index:1000;}
+.floating a{background:#0077cc;color:#fff;padding:10px 14px;border-radius:8px;box-shadow:0 4px 6px rgba(0,0,0,0.2);text-align:center;font-size:.9rem;transition:.3s;}
+.floating a:nth-child(2){background:#25D366;}
+.floating a:nth-child(3){background:#ff6b6b;}
+.floating a:hover{transform:translateY(-3px);}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  .service-hero{grid-template-columns:1fr;}
+  .hero{height:180px;}
+  .nav-links{display:none;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
 <nav>
   <div class="nav-wrap">
-    <a class="brand" href="index.html"><img src="https://i.postimg.cc/Xv53H14t/PW-BG-REMOVE.jpg" alt="logo">Pawar Waterproofing</a>
+    <a class="brand" href="index.html">
+      <img src="https://i.postimg.cc/Xv53H14t/PW-BG-REMOVE.jpg" alt="logo">
+      Pawar Waterproofing
+    </a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="gallery.html">Gallery</a>
-      <a href="about.html">About Us</a>
+      <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </div>
   </div>
 </nav>
 
-<section class="hero"><div class="container"><h1 style="color:#fff">Tank Waterproofing</h1><p style="color:#fff;margin-top:8px">Food-grade and cementitious systems for potable water tanks to keep water safe and leak-free.</p></div></section>
-<main class="container" style="margin-top:18px">
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="container">
+    <h1>Tank Waterproofing</h1>
+    <p>Food-grade and cementitious systems for potable water tanks to keep water safe and leak-free.</p>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<main class="container" style="margin-top:20px">
   <article class="card service-hero">
     <div>
       <h2>Tank Waterproofing</h2>
-      <p style="color:#6b7280">Food-grade and cementitious systems for potable water tanks to keep water safe and leak-free.</p>
+      <p style="color:#6b7280">Our tank waterproofing systems ensure long-term leak prevention and hygiene with food-safe materials.</p>
+      
       <div class="meta">
         <div class="chip">Importance</div>
         <div class="chip">5-Step Process</div>
         <div class="chip">Materials</div>
       </div>
+
       <div class="process card" style="margin-top:14px">
         <h4>5-Step Process</h4>
         <ul>
           <li>Inspection & diagnosis</li>
-          <li>Prepare & repair substrate</li>
-          <li>Apply system-specific materials</li>
-          <li>Curing and protection</li>
-          <li>Testing & handover</li>
+          <li>Surface preparation & repair</li>
+          <li>Application of system materials</li>
+          <li>Curing and surface protection</li>
+          <li>Final testing & handover</li>
         </ul>
       </div>
+
       <div class="materials card" style="margin-top:12px">
         <h4>Materials Used</h4>
-        <ul><li>Polyurethane / Epoxy resins</li><li>Membranes & primers</li><li>Sealants & protection screeds</li></ul>
+        <ul>
+          <li>Food-grade epoxy / polyurethane coatings</li>
+          <li>Waterproofing membranes & primers</li>
+          <li>Sealants and protective screeds</li>
+        </ul>
       </div>
+
       <div class="faq card" style="margin-top:12px">
         <h4>FAQs</h4>
-        <div class="q">Q: Is this permanent?</div><div class="a">A: When applied correctly with proper prep, systems are long-lasting; durability depends on substrate and maintenance.</div><div class="q">Q: How long does it take?</div><div class="a">A: Typical jobs vary 1-7 days depending on scope; inspection gives accurate schedule.</div><div class="q">Q: Do you provide warranty?</div><div class="a">A: Yes — we offer workmanship/material warranties depending on the system chosen.</div><div class="q">Q: Will it disrupt my home?</div><div class="a">A: We plan to minimize disruption; some jobs may require temporary access restrictions.</div><div class="q">Q: How much does it cost?</div><div class="a">A: Costs vary by area, severity and access. We provide free inspections and quotes.</div>
+        <div class="q">Q: Is this permanent?</div>
+        <div class="a">A: With correct application and surface prep, systems last for years. Durability depends on usage and maintenance.</div>
+
+        <div class="q">Q: How long does it take?</div>
+        <div class="a">A: Typically 2–5 days depending on tank size and condition.</div>
+
+        <div class="q">Q: Do you provide warranty?</div>
+        <div class="a">A: Yes. We provide workmanship and material warranties.</div>
+
+        <div class="q">Q: Will it disrupt my home?</div>
+        <div class="a">A: Minimal. We plan work carefully to reduce inconvenience.</div>
+
+        <div class="q">Q: How much does it cost?</div>
+        <div class="a">A: Depends on surface area and severity. Free inspection available.</div>
       </div>
+
       <div class="cta-row">
         <a class="btn" href="tel:+919226948412">Call Now</a>
         <a class="btn" href="https://wa.me/919226948412" style="background:#25D366">WhatsApp</a>
         <a class="btn" href="contact.html" style="background:#ff6b6b">Get Free Quote</a>
       </div>
     </div>
-    <aside style="text-align:center">
-      <img src="https://i.postimg.cc/d3Tnyfdt/IMG-20250717-WA0075.jpgauto=format&fit=crop&w=1200&q=80" alt="Tank Waterproofing main image" style="border-radius:10px;margin-bottom:12px">
-      <div class="card">
+
+    <aside>
+      <img src="https://i.postimg.cc/d3Tnyfdt/IMG-20250717-WA0075.jpg" alt="Tank Waterproofing main image">
+      <div class="card" style="margin-top:10px">
         <strong>Quick Gallery</strong>
         <div class="gallery-grid" style="margin-top:10px">
-          <img src="https://i.postimg.cc/2yBTZtvf/IMG-20250729-WA0010.jpgauto=format&fit=crop&w=1200&q=80" alt="Tank Waterproofing pic">
-          <img src="https://i.postimg.cc/prnkFS8V/IMG-20250717-WA0046.jpgauto=format&fit=crop&w=1200&q=80" alt="Tank Waterproofing pic">
-          <img src="https://i.postimg.cc/d3Tnyfdt/IMG-20250717-WA0075.jpgauto=format&fit=crop&w=1200&q=80" alt="Tank Waterproofing pic">
-          <img src="https://i.postimg.cc/2yBTZtvf/IMG-20250729-WA0010.jpgauto=format&fit=crop&w=1200&q=80" alt="Tank Waterproofing pic">
-          <img src="https://i.postimg.cc/prnkFS8V/IMG-20250717-WA0046.jpgauto=format&fit=crop&w=1200&q=80" alt="Tank Waterproofing pic">
-          <img src="https://i.postimg.cc/d3Tnyfdt/IMG-20250717-WA0075.jpgauto=format&fit=crop&w=1200&q=80" alt="Tank Waterproofing pic">
+          <img src="https://i.postimg.cc/2yBTZtvf/IMG-20250729-WA0010.jpg" alt="Tank waterproofing 1">
+          <img src="https://i.postimg.cc/prnkFS8V/IMG-20250717-WA0046.jpg" alt="Tank waterproofing 2">
+          <img src="https://i.postimg.cc/d3Tnyfdt/IMG-20250717-WA0075.jpg" alt="Tank waterproofing 3">
         </div>
       </div>
     </aside>
   </article>
 </main>
+
+<!-- FOOTER -->
 <footer>© 2016 Pawar Waterproofing</footer>
-<div class="floating"><a href="tel:+919226948412">Call</a><a href="https://wa.me/919226948412">WhatsApp</a><a href="contact.html">Quote</a></div>
-</body></html>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating">
+  <a href="tel:+919226948412">Call</a>
+  <a href="https://wa.me/919226948412">WhatsApp</a>
+  <a href="contact.html">Quote</a>
+</div>
+
+<script>
+// Simple click zoom for gallery
+document.querySelectorAll('.gallery-grid img').forEach(img=>{
+  img.addEventListener('click',()=>{
+    const overlay=document.createElement('div');
+    overlay.style.position='fixed';
+    overlay.style.top=0;overlay.style.left=0;
+    overlay.style.width='100%';overlay.style.height='100%';
+    overlay.style.background='rgba(0,0,0,0.9)';
+    overlay.style.display='flex';
+    overlay.style.alignItems='center';
+    overlay.style.justifyContent='center';
+    overlay.style.zIndex='9999';
+    overlay.innerHTML=`<img src="${img.src}" style="max-width:90%;max-height:90%;border-radius:10px;">`;
+    overlay.onclick=()=>overlay.remove();
+    document.body.appendChild(overlay);
+  });
+});
+</script>
+
+</body>
+</html>
