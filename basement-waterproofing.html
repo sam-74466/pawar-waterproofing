@@ -1,15 +1,210 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Basement Waterproofing - Pawar Waterproofing</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basement Waterproofing - Pawar Waterproofing</title>
+<meta name="description" content="Basement waterproofing by Pawar Waterproofing Pune. Positive and negative side waterproofing systems for leak-free basements.">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css"></head><body>
 
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    background: #f7f9fb;
+    color: #222;
+    line-height: 1.6;
+  }
+
+  /* NAVIGATION */
+  nav {
+    width: 100%;
+    background: #fff;
+    padding: 10px 6%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0056b3;
+    text-decoration: none;
+  }
+  .brand img {
+    height: 40px;
+    border-radius: 5px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0056b3;
+    transition: 0.3s;
+  }
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #ff6600;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    background: linear-gradient(to right, #003d80, #007bff);
+    padding: 80px 6%;
+    color: white;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .hero p {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  /* MAIN CONTENT */
+  .container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 6%;
+  }
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .service-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .service-hero h2 {
+    color: #0056b3;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .chip {
+    background: #e9f0ff;
+    color: #0056b3;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  ul {
+    margin-left: 18px;
+  }
+
+  .cta-row {
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .btn {
+    background: #0056b3;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  .btn:hover {
+    background: #ff6600;
+  }
+
+  aside img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  /* FLOATING BUTTONS */
+  .floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 50;
+  }
+  .floating a {
+    background: #0056b3;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    font-size: 14px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .floating a:hover {
+    background: #ff6600;
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #fff;
+    margin-top: 30px;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+    color: #555;
+  }
+
+  @media (max-width: 768px) {
+    .service-hero {
+      flex-direction: column;
+    }
+    .hero h1 {
+      font-size: 28px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
 <nav>
   <div class="nav-wrap">
-    <a class="brand" href="index.html"><img src="https://i.postimg.cc/Xv53H14t/PW-BG-REMOVE.jpg" alt="logo">Pawar Waterproofing</a>
+    <a class="brand" href="index.html">
+      <img src="https://i.postimg.cc/Xv53H14t/PW-BG-REMOVE.jpg" alt="Pawar Waterproofing logo">
+      Pawar Waterproofing
+    </a>
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
+      <a href="services.html" class="active">Services</a>
       <a href="gallery.html">Gallery</a>
       <a href="about.html">About Us</a>
       <a href="contact.html">Contact</a>
@@ -17,57 +212,93 @@
   </div>
 </nav>
 
-<section class="hero"><div class="container"><h1 style="color:#fff">Basement Waterproofing</h1><p style="color:#fff;margin-top:8px">Comprehensive positive & negative side systems for below-grade structures to stop seepage and dampness.</p></div></section>
-<main class="container" style="margin-top:18px">
+<!-- HERO -->
+<section class="hero">
+  <h1>Basement Waterproofing</h1>
+  <p>Comprehensive positive & negative side systems for below-grade structures to stop seepage and dampness.</p>
+</section>
+
+<!-- CONTENT -->
+<main class="container">
   <article class="card service-hero">
     <div>
-      <h2>Basement Waterproofing</h2>
-      <p style="color:#6b7280">Comprehensive positive & negative side systems for below-grade structures to stop seepage and dampness.</p>
+      <h2>Why Basement Waterproofing Matters</h2>
+      <p style="color:#555">Basements often face moisture issues due to groundwater pressure and leaks through concrete joints. Our advanced waterproofing solutions ensure long-term protection and structural safety.</p>
+
       <div class="meta">
         <div class="chip">Importance</div>
         <div class="chip">5-Step Process</div>
         <div class="chip">Materials</div>
       </div>
-      <div class="process card" style="margin-top:14px">
+
+      <div class="card" style="margin-top:15px">
         <h4>5-Step Process</h4>
         <ul>
           <li>Inspection & diagnosis</li>
-          <li>Prepare & repair substrate</li>
-          <li>Apply system-specific materials</li>
-          <li>Curing and protection</li>
-          <li>Testing & handover</li>
+          <li>Surface preparation & crack treatment</li>
+          <li>Application of waterproofing system</li>
+          <li>Curing & protection layer</li>
+          <li>Testing & quality check</li>
         </ul>
       </div>
-      <div class="materials card" style="margin-top:12px">
+
+      <div class="card" style="margin-top:15px">
         <h4>Materials Used</h4>
-        <ul><li>Polyurethane / Epoxy resins</li><li>Membranes & primers</li><li>Sealants & protection screeds</li></ul>
+        <ul>
+          <li>Polyurethane / Epoxy resins</li>
+          <li>Membranes & primers</li>
+          <li>Sealants & protective coatings</li>
+        </ul>
       </div>
-      <div class="faq card" style="margin-top:12px">
+
+      <div class="card" style="margin-top:15px">
         <h4>FAQs</h4>
-        <div class="q">Q: Is this permanent?</div><div class="a">A: When applied correctly with proper prep, systems are long-lasting; durability depends on substrate and maintenance.</div><div class="q">Q: How long does it take?</div><div class="a">A: Typical jobs vary 1-7 days depending on scope; inspection gives accurate schedule.</div><div class="q">Q: Do you provide warranty?</div><div class="a">A: Yes — we offer workmanship/material warranties depending on the system chosen.</div><div class="q">Q: Will it disrupt my home?</div><div class="a">A: We plan to minimize disruption; some jobs may require temporary access restrictions.</div><div class="q">Q: How much does it cost?</div><div class="a">A: Costs vary by area, severity and access. We provide free inspections and quotes.</div>
+        <p><strong>Q:</strong> Is this permanent?<br><strong>A:</strong> Yes, if properly applied and maintained.</p>
+        <p><strong>Q:</strong> How long does it take?<br><strong>A:</strong> Usually 1–7 days depending on the site.</p>
+        <p><strong>Q:</strong> Do you provide warranty?<br><strong>A:</strong> Yes, based on the system type and area treated.</p>
+        <p><strong>Q:</strong> Will it disrupt my home?<br><strong>A:</strong> Minimal disruption, we plan carefully before work.</p>
       </div>
+
       <div class="cta-row">
         <a class="btn" href="tel:+919226948412">Call Now</a>
         <a class="btn" href="https://wa.me/919226948412" style="background:#25D366">WhatsApp</a>
         <a class="btn" href="contact.html" style="background:#ff6b6b">Get Free Quote</a>
       </div>
     </div>
-    <aside style="text-align:center">
-      <img src="https://i.postimg.cc/qvMwcw9K/Whats-App-Image-2025-11-12-at-7-30-06-PM-1.jpgauto=format&fit=crop&w=1200&q=80" alt="Basement Waterproofing main image" style="border-radius:10px;margin-bottom:12px">
-      <div class="card">
+
+    <aside style="flex:1;text-align:center">
+      <img src="https://i.postimg.cc/qvMwcw9K/Whats-App-Image-2025-11-12-at-7-30-06-PM-1.jpg" alt="Basement Waterproofing">
+      <div class="card" style="margin-top:12px">
         <strong>Quick Gallery</strong>
         <div class="gallery-grid" style="margin-top:10px">
-          <img src="https://i.postimg.cc/jSdc6cGz/Whats-App-Image-2025-11-12-at-7-30-06-PM.jpgauto=format&fit=crop&w=1200&q=80" alt="Basement Waterproofing pic">
-          <img src="https://i.postimg.cc/qvMwcw9K/Whats-App-Image-2025-11-12-at-7-30-06-PM-1.jpgauto=format&fit=crop&w=1200&q=80" alt="Basement Waterproofing pic">
-          <img src="https://i.postimg.cc/02CZJFHD/Whats-App-Image-2025-11-12-at-7-30-07-PM.jpgauto=format&fit=crop&w=1200&q=80" alt="Basement Waterproofing pic">
-          <img src="https://i.postimg.cc/jSdc6cGz/Whats-App-Image-2025-11-12-at-7-30-06-PM.jpgauto=format&fit=crop&w=1200&q=80" alt="Basement Waterproofing pic">
-          <img src="https://i.postimg.cc/qvMwcw9K/Whats-App-Image-2025-11-12-at-7-30-06-PM-1.jpgauto=format&fit=crop&w=1200&q=80" alt="Basement Waterproofing pic">
-          <img src="https://i.postimg.cc/02CZJFHD/Whats-App-Image-2025-11-12-at-7-30-07-PM.jpgauto=format&fit=crop&w=1200&q=80" alt="Basement Waterproofing pic">
+          <img src="https://i.postimg.cc/jSdc6cGz/Whats-App-Image-2025-11-12-at-7-30-06-PM.jpg" alt="">
+          <img src="https://i.postimg.cc/qvMwcw9K/Whats-App-Image-2025-11-12-at-7-30-06-PM-1.jpg" alt="">
+          <img src="https://i.postimg.cc/02CZJFHD/Whats-App-Image-2025-11-12-at-7-30-07-PM.jpg" alt="">
+          <img src="https://i.postimg.cc/jSdc6cGz/Whats-App-Image-2025-11-12-at-7-30-06-PM.jpg" alt="">
+          <img src="https://i.postimg.cc/qvMwcw9K/Whats-App-Image-2025-11-12-at-7-30-06-PM-1.jpg" alt="">
+          <img src="https://i.postimg.cc/02CZJFHD/Whats-App-Image-2025-11-12-at-7-30-07-PM.jpg" alt="">
         </div>
       </div>
     </aside>
   </article>
 </main>
-<footer>© 2016 Pawar Waterproofing</footer>
-<div class="floating"><a href="tel:+919226948412">Call</a><a href="https://wa.me/919226948412">WhatsApp</a><a href="contact.html">Quote</a></div>
-</body></html>
+
+<footer>© 2016 Pawar Waterproofing | All Rights Reserved</footer>
+
+<!-- Floating Buttons -->
+<div class="floating">
+  <a href="tel:+919226948412">📞 Call</a>
+  <a href="https://wa.me/919226948412">💬 WhatsApp</a>
+  <a href="contact.html">📩 Quote</a>
+</div>
+
+<script>
+  // Simple scroll animation
+  document.addEventListener('scroll', () => {
+    const hero = document.querySelector('.hero');
+    hero.style.backgroundPositionY = `${window.scrollY * 0.4}px`;
+  });
+</script>
+
+</body>
+</html>
