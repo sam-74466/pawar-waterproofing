@@ -1,368 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KKGM3DVT');</script>
-<!-- End Google Tag Manager -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pawar Waterproofing — Protect Every Surface</title>
-  <meta name="description" content="Pawar Waterproofing: PU Injection, Epoxy Grouting, Basement, Podium, Roof, Tank Waterproofing, Crack Filling, Plumbing. Expert service in Pune & nearby."/>
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pawar Waterproofing — Services</title>
+  <meta name="description" content="Explore all waterproofing services by Pawar Waterproofing: PU Injection, Roof, Basement, Podium, Tank, Epoxy Grouting, Crack Filling, and more.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg:#0b1020;           
-      --card:#121935;         
-      --muted:#9fb0ff;        
-      --text:#e8edff;         
-      --accent:#3ea7ff;       
-      --accent-2:#6cf3ff;     
-      --ok:#1fd37a;           
-      --warn:#ffbf3e;         
-      --danger:#ff6363;       
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --radius: 18px;
+      --primary:#0d6efd;
+      --dark:#0b1320;
+      --muted:#6b7280;
+      --bg:#f5f7fb;
+      --card:#fff;
+      --radius:12px;
+      --transition:300ms ease;
     }
-
-    * { box-sizing:border-box; margin:0; padding:0 }
-    html,body { height:100% }
-    body {
-      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
-      color:var(--text);
-      background:
-        radial-gradient(1200px 600px at 10% -10%, #1a2250 0%, transparent 60%),
-        radial-gradient(1200px 600px at 110% 10%, #1b3b6b 0%, transparent 60%),
-        var(--bg);
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:var(--bg);
+      color:#222;
     }
-    a { color:var(--accent); text-decoration:none }
-    img { max-width:100%; display:block }
-
-    .container { width:min(1180px, 92%); margin:0 auto }
-
-    header {
-      position:sticky; top:0; z-index:50;
-      backdrop-filter:saturate(140%) blur(8px);
-      background:linear-gradient(180deg, rgba(11,16,32,.9), rgba(11,16,32,.6));
-      border-bottom:1px solid rgba(255,255,255,.06);
+    header{
+      background:var(--dark);
+      color:#fff;
+      position:sticky;
+      top:0;
+      z-index:1200;
+      box-shadow:0 4px 18px rgba(0,0,0,0.15);
     }
-    .nav { display:flex; align-items:center; justify-content:space-between; padding:12px 0 }
-    .brand { display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.3px }
-    .brand .logo {
-      width:38px; height:38px; border-radius:12px;
-      background:conic-gradient(from 180deg, var(--accent), var(--accent-2));
-      box-shadow:0 6px 18px rgba(62,167,255,.4);
+    .nav-wrap{
+      max-width:1200px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:12px 20px;
     }
-    .nav a { opacity:.9; margin-left:18px }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      color:#fff;
+    }
+    .brand img{height:44px;width:44px;border-radius:8px;background:#fff;padding:4px;object-fit:cover;}
+    nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:600;opacity:0.9;}
+    nav a:hover{opacity:1;color:var(--primary);}
+    nav a.active{color:var(--primary);}
 
-    .btn {
-      display:inline-flex; align-items:center; gap:10px;
-      padding:12px 18px; border-radius:14px;
-      border:1px solid rgba(255,255,255,.08);
-      background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
-      color:var(--text); box-shadow:var(--shadow); cursor:pointer;
-      text-decoration: none;
+    /* Banner */
+    .banner{
+      background:linear-gradient(180deg, rgba(11,19,32,0.8), rgba(11,19,32,0.8)),
+      url('https://images.unsplash.com/photo-1581092580497-1f0515b97e8b?auto=format&fit=crop&w=1600&q=80') center/cover;
+      color:#fff;
+      text-align:center;
+      padding:60px 20px;
+    }
+    .banner h1{font-size:2.4rem;margin-bottom:8px;}
+    .banner p{max-width:700px;margin:auto;color:#d9e4ff;}
+    .cta{margin-top:18px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap;}
+    .btn{
+      background:var(--primary);
+      color:#fff;
+      padding:10px 16px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      transition:background var(--transition);
+    }
+    .btn:hover{background:#084298;}
+
+    /* Services Grid */
+    .container{max-width:1200px;margin:40px auto;padding:0 18px;}
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:20px;
+    }
+    .service-card{
+      background:#fff;
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:0 6px 20px rgba(0,0,0,0.06);
+      transition:transform var(--transition),box-shadow var(--transition);
+    }
+    .service-card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 12px 30px rgba(0,0,0,0.1);
+    }
+    .service-card img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+    }
+    .service-body{
+      padding:16px 20px;
+    }
+    .service-body h3{margin:0 0 8px;}
+    .service-body p{color:var(--muted);margin:0 0 12px;}
+    .read-btn{
+      display:inline-block;
+      background:var(--primary);
+      color:#fff;
+      padding:8px 14px;
+      border-radius:8px;
+      text-decoration:none;
       font-weight:600;
     }
-    .btn.primary {
-      background:linear-gradient(180deg, #2f79ff, #2dc4ff);
-      color:#041025; border:none;
-    }
-    .btn.whatsapp {
-      background:linear-gradient(180deg, #22d36e, #11a85e);
-      color:#041a10; border:none;
-    }
-    .btn.call {
-      background:linear-gradient(180deg, #ff5e3a, #ff2a2a);
-      color:#fff; border:none;
-    }
+    .read-btn:hover{background:#084298;}
 
-    .grid { display:grid; gap:22px }
-
-    /* Section Head */
-    .section-head { margin:40px 0 20px }
-    .section-head h2 { font-size:1.8rem; font-weight:700; margin-bottom:6px }
-    .muted { color:var(--muted); font-size:0.95rem }
-
-    /* Services */
-    .cards { grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)) }
-    .card {
-      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-      border:1px solid rgba(255,255,255,.08);
-      border-radius:var(--radius);
-      padding:18px;
-      box-shadow:var(--shadow);
-      position:relative;
+    /* Floating Buttons */
+    .floating{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      z-index:999;
     }
-    .chip {
-      font-size:12px; color:#0b1a0f; background:var(--ok);
-      padding:6px 10px; border-radius:999px; display:inline-block; margin-bottom:10px;
-    }
-    .card h3 { margin:8px 0 8px }
-    .card p { margin:0 0 12px; color:#cfe1ff }
-    .accordion { border-top:1px dashed rgba(255,255,255,.14); margin-top:10px; padding-top:10px }
-    details {
-      background:rgba(0,0,0,.14);
-      border:1px solid rgba(255,255,255,.08);
-      border-radius:14px;
+    .floating a{
+      background:#0d6efd;
+      color:#fff;
       padding:12px 14px;
-      margin:10px 0;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:700;
+      box-shadow:0 6px 12px rgba(0,0,0,0.2);
+      text-align:center;
     }
-    summary { cursor:pointer; font-weight:600 }
-    ul { margin:10px 0 0 18px }
+    .floating a.whatsapp{background:#25D366;}
+    .floating a.call{background:#0a58ca;}
   </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17619677131">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17619677131');
-</script>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKGM3DVT"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
   <header>
-    <div class="container nav">
-      <div class="brand"><span class="logo" aria-hidden="true"></span> Pawar Waterproofing</div>
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="https://i.postimg.cc/Xv53H14t/PW-BG-REMOVE.jpg" alt="logo">
+        <div>
+          <div style="font-weight:700;">Pawar Waterproofing</div>
+          <div style="font-size:12px;opacity:0.8;">Pune • PMC & PCMC</div>
+        </div>
+      </a>
       <nav>
         <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
-
-        <!-- WhatsApp Button -->
-        <a class="btn whatsapp" href="https://wa.me/919226948412?text=Hi%20Pawar%20Waterproofing%2C%20I%20need%20a%20site%20visit" target="_blank" rel="noopener">WhatsApp</a>
-
-        <!-- Call Button -->
-        <a class="btn call" href="tel:+919226948412">Call</a>
+        <a href="about.html">About</a>
       </nav>
     </div>
   </header>
 
-  <section id="services">
-    <div class="container">
-      <div class="section-head">
-        <h2>Services</h2>
-        <div class="muted">Tap to expand details: process, materials, and FAQs.</div>
-      </div>
-
-      <div class="grid cards">
-
-        <!-- Thermal Scanning -->
-        <article class="card">
-          <span class="chip">Leak detection</span>
-          <h3>Thermal Scanning</h3>
-          <p>Accurately locates hidden leakage points using an advanced thermal imaging machine.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul>
-                <li>Inspect and identify seepage area</li>
-                <li>Clean and prepare the affected surface</li>
-                <li>Scan the area with the thermal imaging machine</li>
-                <li>Analyze thermal images and generate report</li>
-                <li>Explain results and suggest proper repair solutions</li>
-              </ul>
-            </details>
-            <details><summary>Technologies we use</summary>
-              <p class="muted">Professional thermal imaging scanner, analysis software, moisture detection tools.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul>
-                <li><b>Can it work on any surface?</b> Yes, it detects seepage on walls, slabs, bathrooms, and concealed areas.</li>
-                <li><b>How accurate is the scan?</b> Up to 99% accurate in pinpointing water leakage paths.</li>
-                <li><b>Does it cause damage?</b> No, it is a completely non-destructive testing method.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- PU Injection -->
-        <article class="card">
-          <span class="chip">Leak sealing</span>
-          <h3>PU Injection (Cracks & Joints)</h3>
-          <p>Stops active water seepage in basements, lift-pits, tanks and slabs by pressure-injecting expanding PU resin.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul><li>Mark leak lines → drill packer points at 45°</li><li>Fix mechanical packers and flush</li><li>Inject hydrophilic/hydrophobic PU under pressure</li><li>Resin expands and blocks water pathways</li><li>Remove packers → patch and finish</li></ul>
-            </details>
-            <details><summary>Materials we use</summary>
-              <p class="muted">PU resin (fast/slow set), packers, injection pump, polymer mortar.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul><li><b>How long does it last?</b> Many years if structure is stable.</li><li><b>Can you inject during active leakage?</b> Yes, fast-foaming resin works on live leaks.</li><li><b>Is it visible after?</b> Only small patched drill marks remain.</li></ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- Toilet Epoxy Grouting -->
-        <article class="card">
-          <span class="chip">Bathroom repair</span>
-          <h3>Toilet Epoxy Grouting</h3>
-          <p>Stops leakage from tile joints, corners, and plumbing gaps in toilets by using chemical-resistant epoxy grout.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul>
-                <li>Clean old cement grout / dirt from tile joints</li>
-                <li>Dry surface and check gaps or hollow areas</li>
-                <li>Mix epoxy resin + hardener with filler powder</li>
-                <li>Apply into joints with rubber trowel, pressing deep</li>
-                <li>Clean surface with sponge before it hardens</li>
-              </ul>
-            </details>
-            <details><summary>Materials we use</summary>
-              <p class="muted">Epoxy resin + hardener, filler powder, spatula, rubber trowel, cleaning agents.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul>
-                <li><b>Why epoxy instead of cement grout?</b> Epoxy is waterproof, chemical-resistant, and won’t crack like cement grout.</li>
-                <li><b>Does it stop leakage below tiles?</b> Yes, it seals joints and prevents water seepage into slab or below bathrooms.</li>
-                <li><b>Is it easy to clean?</b> Yes, epoxy grout resists stains, dirt, and chemicals better than cement grout.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- Basement -->
-        <article class="card">
-          <span class="chip">Underground</span>
-          <h3>Basement Waterproofing</h3>
-          <p>Prevents water entry into basements through walls, slabs and joints using membranes and coatings.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul><li>Surface preparation</li><li>Crack/joint repairs</li><li>Apply primer + membrane coats</li><li>Lay protective screed/boards</li><li>Water testing</li></ul>
-            </details>
-            <details><summary>Materials we use</summary>
-              <p class="muted">Liquid membranes, bituminous sheets, protective screed, polymer mortars.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul><li><b>Will it stop all seepage?</b> Yes if applied on all entry points.</li><li><b>How long does it last?</b> 8–12 years with protection.</li><li><b>Can it be done from inside?</b> Yes, if outside access isn’t possible.</li></ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- Podium -->
-        <article class="card">
-          <span class="chip">Heavy-duty</span>
-          <h3>Podium Waterproofing</h3>
-          <p>Protects podium slabs and parking decks with multi-layer waterproofing systems that handle traffic load.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul><li>Surface cleaning</li><li>Crack filling</li><li>Primer + waterproof layer</li><li>Protective screed</li><li>Final finish (tiles/coat)</li></ul>
-            </details>
-            <details><summary>Materials we use</summary>
-              <p class="muted">Liquid membranes, APP/SBS sheets, screed concrete, PU coatings.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul><li><b>Is it load resistant?</b> Yes, systems designed for traffic.</li><li><b>Do tiles crack later?</b> Not if expansion joints are provided.</li><li><b>How often to redo?</b> Around 10+ years with maintenance.</li></ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- Shade -->
-        <article class="card">
-          <span class="chip">Shops & sheds</span>
-          <h3>Commercial Shade Waterproofing</h3>
-          <p>Stops leakage in sheds and factories with coatings for metal and asbestos roofs.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul><li>Roof cleaning</li><li>Treat overlaps & fasteners</li><li>Primer coat</li><li>2–3 elastomeric coats</li><li>Inspect post-rain</li></ul>
-            </details>
-            <details><summary>Materials we use</summary>
-              <p class="muted">Acrylic/PU elastomeric coatings, primers, sealant tapes.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul><li><b>Does it reduce heat?</b> White coatings reflect sunlight.</li><li><b>How long does it last?</b> 5–7 years typically.</li><li><b>Can work continue below?</b> Yes, no heavy noise/dust.</li></ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- Roof -->
-        <article class="card">
-          <span class="chip">Terrace</span>
-          <h3>Roof Waterproofing</h3>
-          <p>Stops seepage through terraces using coatings, membranes or brickbat coba systems.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul><li>Surface cleaning</li><li>Crack filling + slope correction</li><li>Primer coat</li><li>2–3 waterproof coats</li><li>Protective finish</li></ul>
-            </details>
-            <details><summary>Materials we use</summary>
-              <p class="muted">PU/Acrylic coatings, APP membranes, polymer mortars, tiles.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul><li><b>Does it stop dampness?</b> Yes, prevents water entry.</li><li><b>What about hot weather?</b> Reflective coats lower heat.</li><li><b>How often recoating?</b> 6–8 years on average.</li></ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- Tank -->
-        <article class="card">
-          <span class="chip">Potable safe</span>
-          <h3>Tank Waterproofing</h3>
-          <p>Protects overhead/underground tanks from leakage and contamination with food-grade coatings.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul><li>Drain and clean tank</li><li>Crack repairs</li><li>Primer coat</li><li>2–3 coats food-grade coating</li><li>Curing & refill</li></ul>
-            </details>
-            <details><summary>Materials we use</summary>
-              <p class="muted">Food-grade epoxy, cementitious coating, polymer mortar.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul><li><b>Is it drinking safe?</b> Yes, only food-grade products used.</li><li><b>How long protection?</b> 7–10 years.</li><li><b>Do we need empty tank?</b> Yes, tank must be dry for work.</li></ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- Crack Filling -->
-        <article class="card">
-          <span class="chip">Surface repair</span>
-          <h3>Crack Filling</h3>
-          <p>Fills cracks with polymers, PU or epoxy to stop seepage and prep surface for coating.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul><li>Open crack edges</li><li>Clean dust & loose material</li><li>Apply bonding agent</li><li>Fill with crack filler</li><li>Finish smooth</li></ul>
-            </details>
-            <details><summary>Materials we use</summary>
-              <p class="muted">PU sealant, epoxy, polymer mortar, bonding agents.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul><li><b>Will cracks reopen?</b> If structure settles, may need touch-up.</li><li><b>Works on wet cracks?</b> PU hydrophilic resin works on minor damp cracks.</li><li><b>Time for curing?</b> 2–4 hours for initial set.</li></ul>
-            </details>
-          </div>
-        </article>
-
-        <!-- Plumbing -->
-        <article class="card">
-          <span class="chip">Water supply</span>
-          <h3>Plumbing</h3>
-          <p>Repairs and installs pipelines, valves, faucets to prevent leaks and ensure proper water flow.</p>
-          <div class="accordion">
-            <details><summary>Process — 5 steps</summary>
-              <ul><li>Identify leak or pipe damage</li><li>Shut off water supply</li><li>Repair / replace faulty pipes or fittings</li><li>Test water flow & pressure</li><li>Clean area and provide maintenance tips</li></ul>
-            </details>
-            <details><summary>Materials we use</summary>
-              <p class="muted">PVC/CPVC pipes, GI pipes, valves, sealants, PTFE tape.</p>
-            </details>
-            <details><summary>FAQs</summary>
-              <ul><li><b>Do you handle both residential & commercial?</b> Yes, all types.</li><li><b>Emergency service?</b> Available on call.</li><li><b>Warranty?</b> Parts & workmanship guaranteed.</li></ul>
-            </details>
-          </div>
-        </article>
-
-      </div>
+  <section class="banner">
+    <h1>Our Waterproofing Services</h1>
+    <p>Explore our complete range of 9 expert waterproofing and plumbing solutions for homes, buildings, and industries.</p>
+    
+    <div class="cta">
+      <a href="tel:+919226948412" class="btn"><i class="fa fa-phone"></i> Call Now</a>
+      <a href="https://wa.me/919226948412" class="btn" style="background:#25D366;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
     </div>
   </section>
+
+  <main class="container">
+    <div class="service-card">
+  <img src="https://i.postimg.cc/NffDwbp2/bosch-thermal-camera.jpg" alt="Thermal Scanning">
+  <div class="service-body">
+    <h3>Thermal Scanning</h3>
+    <p>Non-destructive leak and moisture detection using advanced infrared imaging.</p>
+    <a href="thermal.html" class="read-btn">View Details</a>
+  </div>
+</div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://i.postimg.cc/9MmvycXg/IMG-20250729-WA0011.jpg" alt="PU Injection">
+        <div class="service-body">
+          <h3>PU Injection</h3>
+          <p>Stops active leaks by injecting expanding polyurethane into cracks and voids to seal water paths permanently.</p>
+          <a href="pu-injection.html" class="read-btn">View Details</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://i.postimg.cc/NfnBY2Gh/IMG-20250825-WA0023.jpg" alt="Epoxy Grouting">
+        <div class="service-body">
+          <h3>Epoxy Grouting</h3>
+          <p>High-strength epoxy resin injection used to bond and restore cracked concrete structures effectively.</p>
+          <a href="epoxy-grouting.html" class="read-btn">View Details</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://i.postimg.cc/jSdc6cGz/Whats-App-Image-2025-11-12-at-7-30-06-PM.jpg" alt="Basement Waterproofing">
+        <div class="service-body">
+          <h3>Basement Waterproofing</h3>
+          <p>Advanced systems to protect basements from groundwater seepage using membranes and PU-based coatings.</p>
+          <a href="basement-waterproofing.html" class="read-btn">View Details</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://i.postimg.cc/L8nf6bcy/Whats-App-Image-2025-11-12-at-7-30-05-PM-1.jpg" alt="Podium Waterproofing">
+        <div class="service-body">
+          <h3>Podium Waterproofing</h3>
+          <p>Heavy-duty waterproofing designed for podium slabs, driveways, and landscaped areas with long-lasting protection.</p>
+          <a href="podium-waterproofing.html" class="read-btn">View Details</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://i.postimg.cc/BvgzSR5h/IMG-20251012-WA0024-1.jpg" alt="Roof Waterproofing">
+        <div class="service-body">
+          <h3>Roof Waterproofing</h3>
+          <p>Shield your terrace and roof from water and heat using high-performance liquid membranes and coatings.</p>
+          <a href="roof-waterproofing.html" class="read-btn">View Details</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://i.postimg.cc/prnkFS8V/IMG-20250717-WA0046.jpg" alt="Tank Waterproofing">
+        <div class="service-body">
+          <h3>Tank Waterproofing</h3>
+          <p>Protect overhead and underground water tanks from leakage and seepage using epoxy and crystalline coatings.</p>
+          <a href="tank-waterproofing.html" class="read-btn">View Details</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://i.postimg.cc/cJWgc3NQ/IMG-20250717-WA0034.jpg" alt="Commercial Shade Waterproofing">
+        <div class="service-body">
+          <h3>Commercial Shade Waterproofing</h3>
+          <p>Weatherproof solutions for industrial sheds, warehouses, and large commercial roofs.</p>
+          <a href="commercial-shade-waterproofing.html" class="read-btn">View Details</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://i.postimg.cc/QNWR5Yjr/IMG-20250729-WA0009.jpg" alt="Crack Filling">
+        <div class="service-body">
+          <h3>Crack Filling</h3>
+          <p>Durable crack repair using epoxy, PU, and polymer materials for walls, ceilings, and slabs.</p>
+          <a href="crack-filling.html" class="read-btn">View Details</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="https://i.postimg.cc/WbLBTBxn/Whats-App-Image-2025-11-12-at-8-21-52-PM.jpg" alt="Plumbing Services">
+        <div class="service-body">
+          <h3>Plumbing Services</h3>
+          <p>Professional plumbing repair and maintenance to prevent hidden leaks and water damage in your property.</p>
+          <a href="plumbing.html" class="read-btn">View Details</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="floating">
+    <a class="call" href="tel:+919226948412"><i class="fa fa-phone"></i></a>
+    <a class="whatsapp" href="https://wa.me/919226948412"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
 </body>
 </html>
