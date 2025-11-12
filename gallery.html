@@ -1,229 +1,421 @@
-<!DOCTYPE html>
+	<!doctype html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KKGM3DVT');</script>
-<!-- End Google Tag Manager -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pawar Waterproofing — Gallery</title>
-  <meta name="description" content="Pawar Waterproofing gallery: PU Injection, Basement, Roof, Tank, and Podium waterproofing work photos in Pune. View our real project results." />
-  <meta name="keywords" content="Pawar Waterproofing, Waterproofing Gallery, PU Injection, Basement Waterproofing, Roof Waterproofing, Tank Waterproofing, Podium Waterproofing Pune" />
-  <link rel="icon" href="favicon.png" type="image/png">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Lightbox CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pawar Waterproofing — Project Gallery</title>
+  <meta name="description" content="Project gallery: PU Injection, Epoxy, Basement, Roof, Tank and more — real projects across Pune." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    :root {
-      --bg: #0b1020;
-      --card: #121935;
-      --muted: #9fb0ff;
-      --text: #e8edff;
-      --accent: #3ea7ff;
-      --accent-2: #6cf3ff;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --radius: 18px;
+    :root{
+      --primary:#007bff;
+      --dark:#0f1a2b;
+      --muted:#6b7280;
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --radius:12px;
+      --gap:16px;
+      --transition:280ms cubic-bezier(.2,.9,.3,1);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Poppins",sans-serif;
+      background:var(--bg);
+      color:#122;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { height: 100%; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial; color: var(--text); background: var(--bg); scroll-behavior: smooth; }
-    a { color: var(--accent); text-decoration: none; }
+    /* header */
+    header{
+      background:var(--dark);
+      color:#fff;
+      position:sticky;
+      top:0;
+      z-index:1200;
+      box-shadow:0 6px 20px rgba(10,15,25,0.12);
+    }
+    .nav-wrap{
+      max-width:1200px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:12px 18px;
+    }
+    .brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:#fff}
+    .brand img{height:44px;width:44px;border-radius:8px;background:#fff;padding:4px;object-fit:cover}
+    nav a{color:#fff;text-decoration:none;margin-left:16px;font-weight:600;opacity:0.95}
+    nav a.active{color:var(--primary)}
+    .nav-right{display:flex;gap:8px;align-items:center}
 
-    .container { width: min(1180px, 92%); margin: 0 auto; }
+    /* page banner */
+    .banner{
+      background:linear-gradient(180deg, rgba(15,26,43,0.86), rgba(15,26,43,0.86)),
+        url('https://images.unsplash.com/photo-1581092580497-1f0515b97e8b?auto=format&fit=crop&w=1600&q=80') center/cover;
+      color:#fff;
+      padding:48px 18px;
+      text-align:center;
+    }
+    .banner h1{margin:0;font-size:2rem}
+    .banner p{margin:8px 0 0;color:#dbe7ff}
 
-    /* Header */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      backdrop-filter: saturate(140%) blur(8px);
-      background: linear-gradient(180deg, rgba(11,16,32,.9), rgba(11,16,32,.6));
-      border-bottom: 1px solid rgba(255,255,255,.06);
-    }
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 0;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 800;
-      letter-spacing: .3px;
-    }
-    .brand .logo {
-      width: 38px;
-      height: 38px;
-      border-radius: 12px;
-      background: conic-gradient(from 180deg, var(--accent), var(--accent-2));
-      box-shadow: 0 6px 18px rgba(62,167,255,.4);
-    }
-    .nav a { opacity: .9; margin-left: 18px; }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 12px 18px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,.08);
-      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
-      color: var(--text);
-      box-shadow: var(--shadow);
-      cursor: pointer;
-    }
-    .btn.whatsapp { background: linear-gradient(180deg, #22d36e, #11a85e); color: #041a10; border: none; }
-    .btn.call { background: linear-gradient(180deg, #ff6363, #d92b2b); color: #fff; border: none; }
+    /* container */
+    .container{max-width:1200px;margin:22px auto;padding:0 18px}
 
-    /* Section Head */
-    .section-head { margin: 40px 0 20px; text-align: center; }
-    .section-head h2 { font-size: 1.9rem; font-weight: 700; margin-bottom: 6px; }
-    .muted { color: var(--muted); font-size: 0.95rem; }
+    /* filter bar */
+    .filters{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 18px;align-items:center}
+    .filter-btn{
+      background:#fff;border-radius:999px;padding:8px 12px;font-weight:700;border:1px solid #e6eefc;color:var(--dark);cursor:pointer;
+      box-shadow:0 6px 18px rgba(3,102,214,0.04);
+      transition:transform var(--transition),box-shadow var(--transition);
+    }
+    .filter-btn.active{
+      background:linear-gradient(90deg,var(--primary),#0056b3);
+      color:#fff; box-shadow:0 10px 30px rgba(3,102,214,0.16); transform:translateY(-3px);
+    }
+    .filter-kicker{color:var(--muted);font-weight:600;margin-left:auto;font-size:0.95rem}
 
-    /* Masonry Gallery */
-    .gallery { column-count: 3; column-gap: 16px; }
-    @media (max-width: 900px) { .gallery { column-count: 2; } }
-    @media (max-width: 600px) { .gallery { column-count: 1; } }
-    .gallery a {
-      display: block;
-      margin-bottom: 16px;
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 6px 18px rgba(0,0,0,.35);
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity .8s ease, transform .8s ease;
+    /* gallery grid */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:var(--gap);
     }
-    .gallery a.visible {
-      opacity: 1;
-      transform: translateY(0);
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 8px 30px rgba(20,30,50,0.06);
+      transform:translateY(8px);
+      opacity:0;
+      transition:opacity 420ms ease, transform 420ms ease, box-shadow var(--transition);
+      display:flex;flex-direction:column;
     }
-    .gallery img { width: 100%; display: block; border-radius: 14px; }
+    .card.visible{opacity:1;transform:none}
+    .thumb{width:100%;height:190px;overflow:hidden;background:#eee}
+    .thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 420ms ease}
+    .card:hover .thumb img{transform:scale(1.03)}
+    .caption{padding:12px 14px 14px;font-size:0.95rem;color:var(--muted)}
+    .caption .service{font-weight:700;color:var(--dark)}
+    .caption .location{font-size:0.87rem;color:#6b7280;margin-top:6px}
 
-    /* Footer */
-    footer {
-      margin-top: 40px;
-      padding: 24px 0;
-      border-top: 1px solid rgba(255,255,255,.08);
-      font-size: 0.9rem;
-      color: var(--muted);
-      text-align: center;
+    /* empty state for filters */
+    .empty{padding:32px;text-align:center;color:var(--muted);font-weight:600}
+
+    /* lightbox modal */
+    .modal{
+      position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(7,10,15,0.65);z-index:1600;padding:20px;
     }
-    footer .logo {
-      width: 28px;
-      height: 28px;
-      border-radius: 12px;
-      background: conic-gradient(from 180deg, var(--accent), var(--accent-2));
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 8px;
+    .modal.open{display:flex}
+    .modal-inner{
+      max-width:1100px;width:100%;background:transparent;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;align-items:center;
     }
+    .modal-img{width:100%;max-height:80vh;object-fit:contain;border-radius:8px;display:block}
+    .modal-caption{color:#fff;padding:12px 6px;text-align:center}
+    .modal-close{position:absolute;right:18px;top:18px;background:rgba(255,255,255,0.08);border-radius:50%;width:44px;height:44px;display:grid;place-items:center;color:#fff;border:none;cursor:pointer;font-size:18px}
+
+    /* responsive */
+    @media (max-width:980px){ .grid{grid-template-columns:repeat(2,1fr)} .thumb{height:160px} }
+    @media (max-width:560px){ .grid{grid-template-columns:1fr} .thumb{height:220px} .banner h1{font-size:1.4rem} }
+
+    /* floating buttons */
+    .floating{position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:12px;z-index:1400}
+    .floating a{display:inline-flex;align-items:center;gap:10px;padding:12px 14px;border-radius:999px;background:var(--primary);color:#fff;text-decoration:none;font-weight:700;box-shadow:0 10px 28px rgba(3,102,214,0.14)}
+    .floating a.whatsapp{background:#25D366}
+    .floating a.call{background:#044b9a}
+    .floating a.quote{background:#ff6b6b}
+
+    /* small helper */
+    .sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
   </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17619677131">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17619677131');
-</script>
 </head>
-
 <body>
- <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKGM3DVT"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
+  <!-- header -->
   <header>
-    <div class="container nav">
-      <div class="brand"><span class="logo" aria-hidden="true"></span> Pawar Waterproofing</div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a class="btn whatsapp" href="https://wa.me/919226948412?text=Hi%20Pawar%20Waterproofing%2C%20I%20need%20a%20site%20visit" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn call" href="tel:+919226948412">Call Now</a>
-      </nav>
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="https://i.postimg.cc/Xv53H14t/PW-BG-REMOVE.jpg" alt="logo">
+        <div>
+          <div style="font-weight:700">Pawar Waterproofing</div>
+          <div style="font-size:12px;opacity:0.85">Pune • PMC & PCMC Areas</div>
+        </div>
+      </a>
+
+      <div class="nav-right" role="navigation" aria-label="Main navigation">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+      
+          <a href="contact.html">Contact</a>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+
+        </nav>
+      </div>
     </div>
   </header>
 
-  <section id="gallery">
+  <!-- banner -->
+  <section class="banner" aria-hidden="false">
     <div class="container">
-      <div class="section-head">
-        <h2>Gallery</h2>
-        <div class="muted">Recent site photos — before & after waterproofing</div>
-      </div>
-
-      <div class="gallery">
-        <a href="https://i.postimg.cc/ygyCK6YZ/IMG-20250714-WA0045.jpg" data-lightbox="pawar" data-title="Basement waterproofing work">
-          <img src="https://i.postimg.cc/ygyCK6YZ/IMG-20250714-WA0045.jpg" alt="Basement waterproofing work in progress" loading="lazy">
-        </a>
-        <a href="https://i.postimg.cc/S2fb4QND/IMG-20250714-WA0046.jpg" data-lightbox="pawar" data-title="Roof crack repair">
-          <img src="https://i.postimg.cc/S2fb4QND/IMG-20250714-WA0046.jpg" alt="Roof crack waterproofing repair" loading="lazy">
-        </a>
-        <a href="https://i.postimg.cc/0Ms1hKxM/IMG-20250714-WA0047.jpg" data-lightbox="pawar" data-title="PU injection method">
-          <img src="https://i.postimg.cc/0Ms1hKxM/IMG-20250714-WA0047.jpg" alt="PU injection waterproofing method" loading="lazy">
-        </a>
-        <a href="https://i.postimg.cc/5YSWJ9NX/IMG-20250714-WA0048.jpg" data-lightbox="pawar" data-title="Underground tank waterproofing">
-          <img src="https://i.postimg.cc/5YSWJ9NX/IMG-20250714-WA0048.jpg" alt="Underground water tank waterproofing site" loading="lazy">
-        </a>
-        <a href="https://i.postimg.cc/TL6vB5Gy/IMG-20250714-WA0049.jpg" data-lightbox="pawar" data-title="Podium slab treatment">
-          <img src="https://i.postimg.cc/TL6vB5Gy/IMG-20250714-WA0049.jpg" alt="Podium slab waterproofing treatment" loading="lazy">
-        </a>
-        <a href="https://i.postimg.cc/mzyW4Z2Q/IMG-20250714-WA0050.jpg" data-lightbox="pawar" data-title="Epoxy grouting work">
-          <img src="https://i.postimg.cc/mzyW4Z2Q/IMG-20250714-WA0050.jpg" alt="Epoxy grouting waterproofing repair" loading="lazy">
-        </a>
-        <a href="https://i.postimg.cc/Q93ZvKsp/IMG-20250715-WA0002.jpg" data-lightbox="pawar" data-title="Commercial shade protection">
-          <img src="https://i.postimg.cc/Q93ZvKsp/IMG-20250715-WA0002.jpg" alt="Commercial shade waterproofing treatment" loading="lazy">
-        </a>
-        <a href="https://i.postimg.cc/zLW1dFmJ/IMG-20250715-WA0004.jpg" data-lightbox="pawar" data-title="Finished roof waterproofing">
-          <img src="https://i.postimg.cc/zLW1dFmJ/IMG-20250715-WA0004.jpg" alt="Finished roof waterproofing after repair" loading="lazy">
-        </a>
-      </div>
+      <h1>Our Project Gallery</h1>
+      <p>Real waterproofing work across Pune — click any image to enlarge. Filter by service or browse all projects.</p>
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <div style="display:flex; align-items:center; gap:12px; justify-content:center; flex-wrap:wrap">
-        <span class="logo" aria-hidden="true"></span>
-        <div><b>Pawar Waterproofing</b> • Since 2015 • GST & invoices available</div>
+  <!-- main -->
+  <main class="container" id="main">
+    <div style="display:flex;align-items:center;gap:12px;margin-top:8px;">
+      <div class="filters" role="toolbar" aria-label="Gallery filters">
+        <!-- filter buttons -->
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="pu-injection">PU Injection</button>
+        <button class="filter-btn" data-filter="epoxy-grouting">Epoxy Grouting</button>
+        <button class="filter-btn" data-filter="basement">Basement</button>
+        <button class="filter-btn" data-filter="podium">Podium</button>
+        <button class="filter-btn" data-filter="roof">Roof</button>
+        <button class="filter-btn" data-filter="commercial-shade">Commercial Shade</button>
+        <button class="filter-btn" data-filter="tank">Tank</button>
+        <button class="filter-btn" data-filter="crack-filling">Crack Filling</button>
+        <button class="filter-btn" data-filter="plumbing">Plumbing</button>
+        <button class="filter-btn" data-filter="general">Before & After</button>
       </div>
-      <div style="margin-top:8px">© <span id="year"></span> Pawar Waterproofing. All rights reserved.</div>
+      <div class="filter-kicker">20 images • Click to enlarge</div>
     </div>
+
+    <!-- grid -->
+    <section class="grid" id="gallery-grid" aria-live="polite">
+
+      <!-- PU Injection (2) -->
+      <figure class="card" data-category="pu-injection">
+        <div class="thumb"><img src="https://i.postimg.cc/wjF57zPv/IMG-20250717-WA0030-1.jpgauto=format&fit=crop&w=1200&q=80" alt="PU injection - Warje project"></div>
+        <figcaption class="caption"><div class="service">PU Injection</div><div class="location">Indore — Active leak sealing</div></figcaption>
+      </figure>
+
+      <figure class="card" data-category="pu-injection">
+        <div class="thumb"><img src="https://i.postimg.cc/9MmvycXg/IMG-20250729-WA0011.jpgauto=format&fit=crop&w=1200&q=80" alt="PU injection - Aundh"></div>
+        <figcaption class="caption"><div class="service">PU Injection</div><div class="location">Mumbai — Basement injection</div></figcaption>
+      </figure>
+
+      <!-- Epoxy Grouting (2) -->
+      <figure class="card" data-category="epoxy-grouting">
+        <div class="thumb"><img src="https://i.postimg.cc/NfnBY2Gh/IMG-20250825-WA0023.jpgauto=format&fit=crop&w=1200&q=80" alt="Epoxy grouting - Baner"></div>
+        <figcaption class="caption"><div class="service">Epoxy Grouting</div><div class="location">Baner — Structural re-bond</div></figcaption>
+      </figure>
+
+      <figure class="card" data-category="epoxy-grouting">
+        <div class="thumb"><img src="https://i.postimg.cc/NfFBWkts/IMG-20250825-WA0024.jpgauto=format&fit=crop&w=1200&q=80" alt="Epoxy grouting - Balewadi"></div>
+        <figcaption class="caption"><div class="service">Epoxy Grouting</div><div class="location">Balewadi — Crack restoration</div></figcaption>
+      </figure>
+
+      <!-- Basement (2) -->
+      <figure class="card" data-category="basement">
+        <div class="thumb"><img src="https://i.postimg.cc/jSdc6cGz/Whats-App-Image-2025-11-12-at-7-30-06-PM.jpgauto=format&fit=crop&w=1200&q=80" alt="Basement waterproofing - Hinjewadi"></div>
+        <figcaption class="caption"><div class="service">Basement Waterproofing</div><div class="location">Hinjewadi — Negative-side system</div></figcaption>
+      </figure>
+
+      <figure class="card" data-category="basement">
+        <div class="thumb"><img src="https://i.postimg.cc/02CZJFHD/Whats-App-Image-2025-11-12-at-7-30-07-PM.jpgauto=format&fit=crop&w=1200&q=80" alt="Basement waterproofing - Sangvi"></div>
+        <figcaption class="caption"><div class="service">Basement Waterproofing</div><div class="location">Sangvi — External membrane</div></figcaption>
+      </figure>
+
+      <!-- Podium (2) -->
+      <figure class="card" data-category="podium">
+        <div class="thumb"><img src="https://i.postimg.cc/RZNfVDk8/Whats-App-Image-2025-11-12-at-7-30-05-PM.jpgauto=format&fit=crop&w=1200&q=80" alt="Podium waterproofing - PMC project"></div>
+        <figcaption class="caption"><div class="service">Podium Waterproofing</div><div class="location">PMC Project — Traffic-grade membrane</div></figcaption>
+      </figure>
+
+      <figure class="card" data-category="podium">
+        <div class="thumb"><img src="https://i.postimg.cc/L8nf6bcy/Whats-App-Image-2025-11-12-at-7-30-05-PM-1.jpgauto=format&fit=crop&w=1200&q=80" alt="Podium - Aundh parking"></div>
+        <figcaption class="caption"><div class="service">Podium Waterproofing</div><div class="location">Aundh — Parking deck protection</div></figcaption>
+      </figure>
+
+      <!-- Roof (2) -->
+      <figure class="card" data-category="roof">
+        <div class="thumb"><img src="https://i.postimg.cc/zfjQz4wM/IMG-20250717-WA0078.jpgauto=format&fit=crop&w=1200&q=80" alt="Roof waterproofing - Baner terrace"></div>
+        <figcaption class="caption"><div class="service">Roof & Terrace</div><div class="location">Baner — Liquid membrane finish</div></figcaption>
+      </figure>
+
+      <figure class="card" data-category="roof">
+        <div class="thumb"><img src="https://i.postimg.cc/zfjQz4wQ/IMG-20250717-WA0085.jpgauto=format&fit=crop&w=1200&q=80" alt="Roof - Balewadi"></div>
+        <figcaption class="caption"><div class="service">Roof & Terrace</div><div class="location">Balewadi — Reflective topcoat</div></figcaption>
+      </figure>
+
+      <!-- Commercial Shade (2) -->
+      <figure class="card" data-category="commercial-shade">
+        <div class="thumb"><img src="https://i.postimg.cc/02CZJFHD/Whats-App-Image-2025-11-12-at-7-30-07-PM.jpgauto=format&fit=crop&w=1200&q=80" alt="Commercial shade - warehouse"></div>
+        <figcaption class="caption"><div class="service">Commercial Shade</div><div class="location">Hinjewadi — Warehouse roof coating</div></figcaption>
+      </figure>
+
+      <figure class="card" data-category="commercial-shade">
+        <div class="thumb"><img src="https://i.postimg.cc/qvMwcw9K/Whats-App-Image-2025-11-12-at-7-30-06-PM-1.jpgauto=format&fit=crop&w=1200&q=80" alt="Commercial shade - market"></div>
+        <figcaption class="caption"><div class="service">Commercial Shade</div><div class="location">PMC Area — Retail shed</div></figcaption>
+      </figure>
+
+      <!-- Tank (2) -->
+      <figure class="card" data-category="tank">
+        <div class="thumb"><img src="https://i.postimg.cc/prnkFS8V/IMG-20250717-WA0046.jpgauto=format&fit=crop&w=1200&q=80" alt="Tank waterproofing - apartment tank"></div>
+        <figcaption class="caption"><div class="service">Tank Waterproofing</div><div class="location">Baner — Potable tank relining</div></figcaption>
+      </figure>
+
+      <figure class="card" data-category="tank">
+        <div class="thumb"><img src="https://i.postimg.cc/d3Tnyfdt/IMG-20250717-WA0075.jpgauto=format&fit=crop&w=1200&q=80" alt="Tank - industrial"></div>
+        <figcaption class="caption"><div class="service">Tank Waterproofing</div><div class="location">Industrial Site — RCC tank</div></figcaption>
+      </figure>
+
+      <!-- Crack Filling (2) -->
+      <figure class="card" data-category="crack-filling">
+        <div class="thumb"><img src="https://i.postimg.cc/v86p92Gs/IMG-20250729-WA0012.jpgauto=format&fit=crop&w=1200&q=80" alt="Crack filling - balcony"></div>
+        <figcaption class="caption"><div class="service">Crack Filling</div><div class="location">Pimple Saudagar — Balcony repairs</div></figcaption>
+      </figure>
+
+      <figure class="card" data-category="crack-filling">
+        <div class="thumb"><img src="https://i.postimg.cc/v86p92Gs/IMG-20250729-WA0012.jpgauto=format&fit=crop&w=1200&q=80" alt="Crack filling - beam repair"></div>
+        <figcaption class="caption"><div class="service">Crack Filling</div><div class="location">Pimple Saudagar — Beam structural fill</div></figcaption>
+      </figure>
+
+      <!-- Plumbing (2) -->
+      <figure class="card" data-category="plumbing">
+        <div class="thumb"><img src="https://i.postimg.cc/WbLBTBxn/Whats-App-Image-2025-11-12-at-8-21-52-PM.jpgauto=format&fit=crop&w=1200&q=80" alt="Plumbing repair - concealed leak"></div>
+        <figcaption class="caption"><div class="service">Plumbing</div><div class="location">Hadpsar — Concealed leak detection</div></figcaption>
+      </figure>
+
+      <figure class="card" data-category="plumbing">
+        <div class="thumb"><img src="https://i.postimg.cc/G3y00LgQ/Whats-App-Image-2025-11-12-at-8-21-53-PM-1.jpgauto=format&fit=crop&w=1200&q=80" alt="Plumbing - pipe replacement"></div>
+        <figcaption class="caption"><div class="service">Plumbing</div><div class="location">Lohegaon — Pipe replacement</div></figcaption>
+      </figure>
+
+    
+
+    </section>
+
+    <div id="emptyMessage" class="empty" style="display:none">No images for this category.</div>
+  </main>
+
+  <!-- modal lightbox -->
+  <div id="lightbox" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-inner" role="document">
+      <button class="modal-close" aria-label="Close (Esc)"><i class="fa fa-times"></i></button>
+      <img id="lightboxImg" class="modal-img" src="" alt="">
+      <div id="lightboxCaption" class="modal-caption"></div>
+    </div>
+  </div>
+
+  <!-- floating CTA -->
+  <div class="floating" aria-hidden="false">
+    <a class="call" href="tel:+919226948412"><i class="fa fa-phone"></i> Call</a>
+    <a class="whatsapp" href="https://wa.me/919226948412" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a class="quote" href="contact.html"><i class="fa fa-envelope"></i> Get Free Quote</a>
+  </div>
+
+  <footer style="padding:18px 0;text-align:center;color:#6b7280;font-size:14px;margin-top:28px">
+    © 2016 Pawar Waterproofing — Serving Warje • Aundh • Baner • Balewadi • Hinjewadi • Sangvi • PMC / PCMC.
   </footer>
 
-  <!-- Auto year -->
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      const grid = document.getElementById('gallery-grid');
+      const cards = Array.from(grid.querySelectorAll('.card'));
+      const filters = Array.from(document.querySelectorAll('.filter-btn'));
+      const empty = document.getElementById('emptyMessage');
 
-    // Fade-in animation for gallery images
-    const galleryItems = document.querySelectorAll('.gallery a');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
+      // Fade-in on scroll using IntersectionObserver
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(e=>{
+          if(e.isIntersecting){
+            e.target.classList.add('visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, {threshold:0.12});
+      cards.forEach(c => io.observe(c));
+
+      // Filtering logic
+      function applyFilter(category){
+        let shown = 0;
+        cards.forEach(card => {
+          const cat = card.getAttribute('data-category');
+          if(category === 'all' || cat === category){
+            card.style.display = '';
+            shown++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        empty.style.display = shown === 0 ? 'block' : 'none';
+      }
+
+      filters.forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          filters.forEach(b=>b.classList.remove('active'));
+          btn.classList.add('active');
+          const cat = btn.getAttribute('data-filter');
+          applyFilter(cat);
+          // scroll to gallery top on mobile for ease
+          if(window.innerWidth < 700) window.scrollTo({top: grid.offsetTop - 80, behavior:'smooth'});
+        });
+
+        // keyboard access
+        btn.addEventListener('keydown', (e)=>{
+          if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
+        });
       });
-    }, { threshold: 0.2 });
 
-    galleryItems.forEach(item => observer.observe(item));
+      // Lightbox
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const modalClose = document.querySelector('.modal-close');
+
+      function openLightbox(imgSrc, alt, caption){
+        lightboxImg.src = imgSrc;
+        lightboxImg.alt = alt || '';
+        lightboxCaption.textContent = caption || '';
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden','false');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeLightbox(){
+        lightbox.classList.remove('open');
+        lightbox.setAttribute('aria-hidden','true');
+        lightboxImg.src = '';
+        document.body.style.overflow = '';
+      }
+
+      // click on card to open
+      cards.forEach(card=>{
+        card.addEventListener('click', (e)=>{
+          // don't open if click was on a nested control (we don't have controls here) - but safe guard
+          const img = card.querySelector('img');
+          const service = card.querySelector('.service').textContent;
+          const location = card.querySelector('.location').textContent;
+          openLightbox(img.src, img.alt, service + ' — ' + location);
+        });
+      });
+
+      modalClose.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', (e)=>{
+        if(e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', (e)=>{
+        if(e.key === 'Escape') closeLightbox();
+      });
+
+      // allow keyboard opening (focusable)
+      cards.forEach(c=>{
+        c.setAttribute('tabindex','0');
+        c.addEventListener('keydown', (e)=>{
+          if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); c.click(); }
+        });
+      });
+
+      // initial: show all
+      applyFilter('all');
+    })();
   </script>
-
-  <!-- Lightbox JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
