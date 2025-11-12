@@ -5,8 +5,62 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Podium Waterproofing - Pawar Waterproofing</title>
 
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#f4f6f8;color:#222;line-height:1.6}
+
+    /* NAVIGATION */
+    nav{background:#0b1a2a;color:#fff;padding:12px 0;box-shadow:0 2px 8px rgba(0,0,0,0.1);position:sticky;top:0;z-index:999}
+    .nav-wrap{width:90%;max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center}
+    .brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:#fff;font-weight:600;font-size:1.1rem}
+    .brand img{width:40px;height:40px;border-radius:50%}
+    .nav-links a{text-decoration:none;color:#fff;margin:0 10px;font-size:0.95rem;transition:0.3s}
+    .nav-links a:hover{color:#00b4d8}
+
+    /* HERO SECTION */
+    .hero{background:linear-gradient(to right,#00416a,#00b4d8);padding:60px 20px;text-align:center}
+    .hero h1{font-size:2rem;font-weight:700;color:#fff}
+    .hero p{color:#e8f9ff;font-size:1rem;max-width:600px;margin:auto;margin-top:10px}
+
+    /* MAIN CONTENT */
+    .container{width:90%;max-width:1200px;margin:auto}
+    .card{background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.1);padding:20px;margin-bottom:20px}
+    h2{color:#00416a;margin-bottom:10px}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .chip{background:#e0f4ff;color:#0077b6;padding:5px 10px;border-radius:20px;font-size:0.85rem}
+    ul{margin-left:20px}
+    ul li{margin-bottom:6px}
+
+    /* GALLERY GRID */
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+    .gallery-grid img{width:100%;border-radius:8px;transition:transform 0.3s}
+    .gallery-grid img:hover{transform:scale(1.05)}
+
+    /* CTA BUTTONS */
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px}
+    .btn{background:#0077b6;color:#fff;padding:10px 18px;border-radius:6px;text-decoration:none;font-weight:500;transition:0.3s}
+    .btn:hover{background:#023e8a}
+
+    /* FLOATING BUTTONS */
+    .floating{position:fixed;bottom:15px;right:15px;display:flex;flex-direction:column;gap:10px;z-index:999}
+    .floating a{background:#0077b6;color:#fff;text-decoration:none;padding:10px 15px;border-radius:6px;font-size:0.9rem;text-align:center;transition:0.3s}
+    .floating a:hover{background:#023e8a}
+
+    /* FAQ STYLING */
+    .faq .q{font-weight:600;margin-top:10px;cursor:pointer}
+    .faq .a{display:none;margin-left:10px;color:#555;font-size:0.95rem;margin-top:4px}
+
+    footer{text-align:center;padding:20px;background:#0b1a2a;color:#fff;margin-top:20px;font-size:0.9rem}
+
+    /* RESPONSIVE */
+    @media (max-width:768px){
+      .nav-wrap{flex-direction:column;gap:8px}
+      .cta-row{flex-direction:column}
+    }
+  </style>
 </head>
 
 <body>
@@ -30,15 +84,13 @@
   <!-- HERO SECTION -->
   <section class="hero">
     <div class="container">
-      <h1 style="color:#fff">Podium Waterproofing</h1>
-      <p style="color:#fff;margin-top:8px">
-        Durable systems designed for traffic-bearing and landscaped podiums protecting below-deck areas and parking spaces.
-      </p>
+      <h1>Podium Waterproofing</h1>
+      <p>Durable systems designed for traffic-bearing and landscaped podiums protecting below-deck areas and parking spaces.</p>
     </div>
   </section>
 
   <!-- MAIN CONTENT -->
-  <main class="container" style="margin-top:18px">
+  <main class="container" style="margin-top:20px">
     <article class="card service-hero">
       <div>
         <h2>Podium Waterproofing</h2>
@@ -52,7 +104,7 @@
           <div class="chip">Materials</div>
         </div>
 
-        <div class="process card" style="margin-top:14px">
+        <div class="card" style="margin-top:14px">
           <h4>5-Step Process</h4>
           <ul>
             <li>Inspection & diagnosis</li>
@@ -63,7 +115,7 @@
           </ul>
         </div>
 
-        <div class="materials card" style="margin-top:12px">
+        <div class="card" style="margin-top:12px">
           <h4>Materials Used</h4>
           <ul>
             <li>Polyurethane and epoxy resins</li>
@@ -97,27 +149,26 @@
         </div>
       </div>
 
-      <aside style="text-align:center">
+      <aside style="text-align:center;margin-top:20px">
         <img src="https://i.postimg.cc/RZNfVDk8/Whats-App-Image-2025-11-12-at-7-30-05-PM.jpg?auto=format&fit=crop&w=1200&q=80" 
              alt="Podium Waterproofing main image" 
-             style="border-radius:10px;margin-bottom:12px">
+             style="border-radius:10px;margin-bottom:12px;width:100%;max-width:600px">
 
         <div class="card">
           <strong>Quick Gallery</strong>
           <div class="gallery-grid" style="margin-top:10px">
-            <img src="https://i.postimg.cc/L8nf6bcy/Whats-App-Image-2025-11-12-at-7-30-05-PM-1.jpg?auto=format&fit=crop&w=1200&q=80" alt="Podium Waterproofing">
-            <img src="https://i.postimg.cc/RZNfVDk8/Whats-App-Image-2025-11-12-at-7-30-05-PM.jpg?auto=format&fit=crop&w=1200&q=80" alt="Podium Waterproofing">
-            <img src="https://i.postimg.cc/kXjKCmpz/Whats-App-Image-2025-11-12-at-7-30-05-PM-2.jpg?auto=format&fit=crop&w=1200&q=80" alt="Podium Waterproofing">
-            <img src="https://i.postimg.cc/RZNfVDk8/Whats-App-Image-2025-11-12-at-7-30-05-PM.jpg?auto=format&fit=crop&w=1200&q=80" alt="Podium Waterproofing">
-            <img src="https://i.postimg.cc/L8nf6bcy/Whats-App-Image-2025-11-12-at-7-30-05-PM-1.jpg?auto=format&fit=crop&w=1200&q=80" alt="Podium Waterproofing">
-            <img src="https://i.postimg.cc/kXjKCmpz/Whats-App-Image-2025-11-12-at-7-30-05-PM-2.jpg?auto=format&fit=crop&w=1200&q=80" alt="Podium Waterproofing">
+            <img src="https://i.postimg.cc/L8nf6bcy/Whats-App-Image-2025-11-12-at-7-30-05-PM-1.jpg?auto=format&fit=crop&w=1200&q=80" alt="">
+            <img src="https://i.postimg.cc/RZNfVDk8/Whats-App-Image-2025-11-12-at-7-30-05-PM.jpg?auto=format&fit=crop&w=1200&q=80" alt="">
+            <img src="https://i.postimg.cc/kXjKCmpz/Whats-App-Image-2025-11-12-at-7-30-05-PM-2.jpg?auto=format&fit=crop&w=1200&q=80" alt="">
+            <img src="https://i.postimg.cc/RZNfVDk8/Whats-App-Image-2025-11-12-at-7-30-05-PM.jpg?auto=format&fit=crop&w=1200&q=80" alt="">
+            <img src="https://i.postimg.cc/L8nf6bcy/Whats-App-Image-2025-11-12-at-7-30-05-PM-1.jpg?auto=format&fit=crop&w=1200&q=80" alt="">
+            <img src="https://i.postimg.cc/kXjKCmpz/Whats-App-Image-2025-11-12-at-7-30-05-PM-2.jpg?auto=format&fit=crop&w=1200&q=80" alt="">
           </div>
         </div>
       </aside>
     </article>
   </main>
 
-  <!-- FOOTER -->
   <footer>© 2016 Pawar Waterproofing</footer>
 
   <!-- FLOATING BUTTONS -->
@@ -126,5 +177,15 @@
     <a href="https://wa.me/919226948412">WhatsApp</a>
     <a href="contact.html">Quote</a>
   </div>
+
+  <script>
+    // FAQ Toggle
+    document.querySelectorAll('.faq .q').forEach(q=>{
+      q.addEventListener('click',()=>{
+        const a=q.nextElementSibling;
+        a.style.display=a.style.display==='block'?'none':'block';
+      });
+    });
+  </script>
 </body>
 </html>
