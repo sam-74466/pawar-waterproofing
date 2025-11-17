@@ -3,14 +3,6 @@
 <head>
   <script src="https://unpkg.com/@studio-freight/lenis"></script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17611131260"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-17611131260');
-  </script>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us - Pawar Waterproofing</title>
@@ -36,9 +28,6 @@
     }
     .submit-btn{background:#25d366;border:none;padding:12px;width:100%;
       border-radius:10px;font-size:16px;font-weight:bold;color:white;cursor:pointer;}
-    .message{text-align:center;font-size:16px;margin-top:10px;display:none;padding:8px;}
-    .success{background:#28a745;color:white;}
-    .error{background:#dc3545;color:white;}
     nav{position:fixed;top:0;width:100%;background:rgba(0,0,0,0.7);
       padding:10px 20px;display:flex;justify-content:space-between;z-index:10;}
     nav h1{color:#00e6e6;}
@@ -82,20 +71,19 @@
       <input type="tel" id="mobile" name="mobile" required>
     </div>
 
-    <!-- Address field -->
     <div class="form-group">
       <label for="address">Address</label>
       <input type="text" id="address" name="address" required placeholder="Your Full Address">
     </div>
 
     <div class="form-group">
-      <label for="email">Email (Optional — For Auto-Reply)</label>
-      <input type="email" id="email" name="email" placeholder="you@example.com">
+      <label for="email">Email (Optional — For Auto Reply)</label>
+      <input type="email" id="email" name="email">
     </div>
 
     <div class="form-group">
       <label for="problem">Select Problem</label>
-      <select id="problem" name="problem" onchange="changeBackground()" required>
+      <select id="problem" name="problem" required>
         <option value="default">-- Choose Problem --</option>
         <option value="thermal">Thermal Scanning</option>
         <option value="roof">Roof Waterproofing</option>
@@ -115,7 +103,6 @@
     </div>
 
     <button type="submit" class="submit-btn">Submit</button>
-    <div id="formMessage" class="message"></div>
   </form>
 </div>
 
@@ -126,69 +113,40 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
+
+<!-- SAVE + EMAIL ALERT + WHATSAPP ALERT -->
 <script>
-  function changeBackground(){
-    const bg=document.getElementById('contactBackground');
-    const p=document.getElementById('problem').value;
-    const images={
-      thermal:"https://i.postimg.cc/nh1qxq7v/thermal.jpg",
-      roof:"https://i.postimg.cc/L5nGSXXR/IMG-20250715-WA0005.jpg",
-      tank:"https://i.postimg.cc/SKjyRyjT/water-tank-waterproofing.webp",
-      basement:"https://i.postimg.cc/65r5P3by/basement.jpg",
-      pu:"https://i.postimg.cc/wvcjNwc3/pu-injection.jpg",
-      epoxy:"https://i.postimg.cc/dVyvdWJv/bathrom-grouting.jpg",
-      crack:"https://i.postimg.cc/bNWcmB7R/IMG-20250717-WA0081.jpg",
-      plumbing:"https://i.postimg.cc/5Nh4yc8b/plumbing-work.webp",
-      other:"https://i.postimg.cc/tRfXJ6w1/other.jpg"
-    };
-    bg.style.backgroundImage=`url('${images[p]||images.default}')`;
-  }
-</script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbxMGQNWp3kIUB7rNR5gmf86e5Leo5BddG7Vqgst3_C-/dev";
 
-<!-- ✔ Updated Script: sends to Google Sheet + WhatsApp + Thank You -->
-<script>
-  const scriptURL = "https://script.google.com/macros/s/AKfycbzADgcnp68Uoxk4wz7BUey9XlMcIRfrGUDVyXjBhyZKV7-uPzlZO5lfNREb-E6x514r0g/exec";
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
 
-  document.getElementById("contactForm").addEventListener("submit", async(e)=>{
-    e.preventDefault();
+  const form = e.target;
 
-    const form = e.target;
-    const msg = document.getElementById("formMessage");
+  const data = {
+    name: form.name.value,
+    mobile: form.mobile.value,
+    email: form.email.value,
+    address: form.address.value,
+    problem: form.problem.value,
+    message: form.message.value
+  };
 
-    const data = {
-      name: form.name.value,
-      mobile: form.mobile.value,
-      email: form.email.value,
-      address: form.address.value,
-      problem: form.problem.value,
-      message: form.message.value
-    };
-
-    await fetch(scriptURL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    });
-
-    msg.textContent = "Message sent successfully!";
-    msg.className = "message success";
-    msg.style.display = "block";
-
-    // WhatsApp Alert
-    const waMessage = encodeURIComponent(
-      `New Inquiry:\nName: ${data.name}\nMobile: ${data.mobile}\nAddress: ${data.address}\nProblem: ${data.problem}\nMessage: ${data.message}`
-    );
-    window.open(`https://wa.me/919226948412?text=${waMessage}`, "_blank");
-
-    form.reset();
-
-    setTimeout(() => { window.location.href = "thanku.html"; }, 800);
+  await fetch(scriptURL, {
+    method: "POST",
+    mode: "no-cors",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data)
   });
+
+  alert("Submitted successfully! You will get confirmation shortly.");
+  form.reset();
+});
 </script>
 
 <script>
-const lenis = new Lenis({ duration: 1.1, smooth: true });
-function raf(time){ lenis.raf(time); requestAnimationFrame(raf); }
+const lenis=new Lenis({duration:1.1,smooth:true});
+function raf(time){lenis.raf(time);requestAnimationFrame(raf);}
 requestAnimationFrame(raf);
 </script>
 
