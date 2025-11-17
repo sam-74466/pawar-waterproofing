@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://unpkg.com/@studio-freight/lenis"></script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17611131260"></script>
 <script>
@@ -175,6 +177,20 @@
   <footer>
     © 2016 Pawar Waterproofing | Expert Waterproofing Services in Pune & Mumbai
   </footer>
+<script>
+  const lenis = new Lenis({
+    duration: 1.1,
+    smooth: true,
+    smoothTouch: true
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+</script>
 
 </body>
 </html>
