@@ -300,6 +300,20 @@
     <a href="https://wa.me/919226948412">WhatsApp</a>
     <a href="contact.html">Quote</a>
   </div>
+<script>
+  const lenis = new Lenis({
+    duration: 1.1,
+    smooth: true,
+    smoothTouch: true
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+</script>
 
 </body>
 </html>
