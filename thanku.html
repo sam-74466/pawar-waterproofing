@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://unpkg.com/@studio-freight/lenis"></script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17611131260"></script>
 <script>
@@ -153,5 +155,20 @@
     <a href="https://wa.me/918605810586" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
     <a href="tel:+918605810586" class="call-btn"><i class="fas fa-phone-alt"></i></a>
   </div>
+  <script>
+  const lenis = new Lenis({
+    duration: 1.1,
+    smooth: true,
+    smoothTouch: true
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+</script>
+
 </body>
 </html>
