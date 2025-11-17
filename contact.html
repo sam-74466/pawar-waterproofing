@@ -114,9 +114,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
 
-<!-- SAVE + EMAIL ALERT + WHATSAPP ALERT -->
-<script>
-const scriptURL = "https://script.google.com/macros/s/AKfycbxMGQNWp3kIUB7rNR5gmf86e5Leo5BddG7Vqgst3_C-/dev";
+<!-- SAVE + EMAIL ALERT + WHATSAPP ALERT --><script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbzYoix84bZGlt67ql4LZVrA54p8jyC91cP_N4fdaBMHOX4qfizcKo3B8XDYOCf1MZn7Vg/exec";  // <-- replace with your deployed Web App URL
 
 document.getElementById("contactForm").addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -132,17 +131,23 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
     message: form.message.value
   };
 
-  await fetch(scriptURL, {
-    method: "POST",
-    mode: "no-cors",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data)
-  });
+  try {
+    const response = await fetch(scriptURL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+      // no need for "no-cors"
+    });
 
-  alert("Submitted successfully! You will get confirmation shortly.");
-  form.reset();
+    alert("Submitted successfully! We received your details.");
+    form.reset();
+  } catch (err) {
+    console.error(err);
+    alert("Something went wrong. Try again.");
+  }
 });
 </script>
+
 
 <script>
 const lenis=new Lenis({duration:1.1,smooth:true});
